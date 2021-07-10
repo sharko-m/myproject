@@ -1,0 +1,220 @@
+@import "normalize";
+@import "fonts";
+
+
+body {
+    width: 100%;
+    font-family: "Quicksand-Regular", sans-serif;
+    font-size: 20px;
+    color: #212121;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    box-sizing: border-box;
+}
+.preview {    
+    height: 111vh;    
+    background-image: url("../img/kafenaitcof1-22.jpg");
+    background-repeat: no-repeat;
+    // padding-top: 24px;
+    background-size: cover;
+    // padding-top: 52px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header {
+    height: 40vh;
+    position: relative;
+    
+}
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;    
+}
+.logo img {
+    position: absolute;
+    top: 9px;
+    left: -12px;    
+    border: solid 15px #000;
+    border-radius: 50%;          
+}
+.wrapper .nav-container {
+    margin-top: 27px;
+    display: flex;      
+    align-items: center; 
+    word-spacing: 1px;
+    letter-spacing: 1.0px;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+nav a {
+    text-decoration: none;    
+    color: white;
+}
+.nav li {
+    text-transform: capitalize;
+    margin-left: 22px;
+    letter-spacing: 1px;
+}
+.nav .home {
+    color: #eec947;
+}
+.shopping, .search {
+    width: 5px;
+    display: flex;
+    margin-left: 8px;
+    margin-right: 24px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+}
+
+.kafeinate {
+    max-width: 1090px;    
+    display: flex;
+    align-items: flex-end;
+    // padding-top: 85px;
+    // flex-grow: 2;
+    // padding-bottom: 18vh;
+}
+
+.kafeinate .wrapperkaf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // margin-right: 55px;
+    // margin-bottom: 62px;
+    align-items: flex-end;
+    // max-width: 1260px;
+    margin-left: auto;
+    box-sizing: border-box;
+    // align-items: flex-end;
+    // width: 991px;
+    // margin-right: 117px;
+      
+}
+
+.wrapperkaf h2 {
+    width: 500px;
+    font-family: "Economica", sans-serif;    
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #eec947;
+    word-spacing: 7px;
+    padding-bottom: 6px;
+    margin-top: 33px;
+    height: 8px;
+}
+
+.wrapperkaf p {    
+    max-width: 516px;
+    // padding-top: 26px;
+    line-height: 1.8;
+    color: #fff;
+    margin-top: 11px;
+    margin-right: -14px;
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+    
+}
+.wrapperkaf button {
+    background-color: transparent;
+    width: 194px;
+    height: 45px;
+    border: solid 2px #eec947;
+    color: #eec947;
+    border-radius: 5px;
+    letter-spacing: 2.5px;
+    text-transform: capitalize;
+}   
+.button-order {
+    width: 498px;
+}
+
+
+// section2
+
+.services {
+    padding-top: 32px;
+    
+    
+}
+.wrapperser{
+    height: 220px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.wrapperser h3{
+    text-transform: uppercase;
+    font-family: "Economica", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -5px;
+    margin-top: 60px;
+    padding-right: 14px;    
+}
+.wrapperser p {
+    max-width: 828px;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 5px;
+    letter-spacing: 0.3px;    
+}
+
+.services .services-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.services-item .items{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.items img {
+    width: 72%;    
+    border: solid 9px #e5e5e5;
+    border-radius: 50%;
+}
+.items h4 {
+    height: 5px;
+    font-family: "Economica", sans-serif;
+    margin-top: 14px;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 15px;
+}
+.items p {    
+    margin-bottom: 8px;
+    height: 80px;
+    width: 353px;
+    text-align: center;
+    margin-top: 3px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    word-spacing: 0.2px;
+}
+
+
+// section3
+
+
+
+
