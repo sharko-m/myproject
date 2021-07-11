@@ -14,9 +14,7 @@ body {
 .wrapper {
     max-width: 1080px;
     margin-left: auto;
-    margin-right: auto;
-    // padding-right: 15px;
-    // padding-left: 15px;
+    margin-right: auto;   
     box-sizing: border-box;
 }
 .preview {    
@@ -28,13 +26,11 @@ body {
     // padding-top: 52px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 .header {
-    height: 40vh;
-    position: relative;
-    
+    position: relative;  
+    height: 40vh;      
 }
 .header .wrapper {
     display: flex;
@@ -84,26 +80,16 @@ nav a {
 .kafeinate {
     max-width: 1090px;    
     display: flex;
-    align-items: flex-end;
-    // padding-top: 85px;
-    // flex-grow: 2;
-    // padding-bottom: 18vh;
+    align-items: flex-end;    
 }
 
 .kafeinate .wrapperkaf {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    // margin-right: 55px;
-    // margin-bottom: 62px;
-    align-items: flex-end;
-    // max-width: 1260px;
+    flex-direction: column;    
+    align-items: flex-end;    
     margin-left: auto;
-    box-sizing: border-box;
-    // align-items: flex-end;
-    // width: 991px;
-    // margin-right: 117px;
-      
+    box-sizing: border-box;   
 }
 
 .wrapperkaf h2 {
@@ -119,15 +105,13 @@ nav a {
 }
 
 .wrapperkaf p {    
-    max-width: 516px;
-    // padding-top: 26px;
+    max-width: 516px;    
     line-height: 1.8;
     color: #fff;
     margin-top: 11px;
     margin-right: -14px;
     letter-spacing: 0.7px;
-    word-spacing: 1px;
-    
+    word-spacing: 1px;    
 }
 .wrapperkaf button {
     background-color: transparent;
@@ -143,13 +127,10 @@ nav a {
     width: 498px;
 }
 
-
 // section2
 
 .services {
-    padding-top: 32px;
-    
-    
+    padding-top: 32px;       
 }
 .wrapperser{
     height: 220px;    
@@ -212,9 +193,151 @@ nav a {
     word-spacing: 0.2px;
 }
 
-
 // section3
 
+.wrapper-menu {
+    position: relative;
+    height: 117vh;
+    margin-top: 63px;
+    display: flex;
+    background-color: #edc947;
+}
+.coffee-menu {    
+    flex-basis: 340px;
+    flex-grow: 5;
+    background-color: black;
+    justify-content: center;    
+}
 
+aside {
+    width: 130px;
+    flex-grow: 3;    
+    background-image: url(../img/yellowcup.png);
+    background-repeat: no-repeat;    
+}
+aside img {
+    position: absolute;
+    top: 28%;
+    right: -5%;
+}
+.buttons-menu button {
+    background-color: transparent;
+    width: 194px;
+    height: 45px;
+    border: solid 2px #eec947;
+    color: #eec947;
+    border-radius: 5px;
+    letter-spacing: 2.5px;
+    text-transform: capitalize;    
+    margin-left: 15px;
+    letter-spacing: 0.8px;
+}
+.buttons-menu .selected-button {
+    background-color: #edc947;
+    color: #121211;
+}
+.coffee-menu h3 {
+    color: #edc846;
+    text-transform: uppercase;
+    font-family: "Economica", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    height: 29px;
+    margin-top: 88px;
+    margin-right: 85px;
+}
+.wrapper-menu .menu {
+    width: auto;
+    display: flex;   
+}
+.buttons-menu {
+    display: flex;
+    align-items: flex-end;
+}
+.menu-drinks {
+    position: relative;
+    height: 424px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #faedb8;
+    margin-top: 30px;
+}
+.menu-drinks .wrapper-price {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 131px;
+    flex-wrap: wrap;
+}
+.wrapper-price .drinks-name {
+    display: flex;
+    flex-direction: column;
+    width: 244px;
+}
+.wrapper-price .price {
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    height: 131px;
+}
+.price img {
+    height: 13px;
+    margin-top: 26px;
+    margin-right: 11px;
+}
+.drinks-name h4 {
+    font-family: "Economica", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    height: 6px;
+    margin-top: 21px;
+    margin-bottom: 32px;
+    margin-left: 6px;
+    letter-spacing: 1.3px;
+}
+.drinks-name p {
+    font-size: 14px;
+    word-spacing: 5px;
+    letter-spacing: 1.3px;
+}
+
+.price p {
+    font-size: 14px;
+    margin-top: 23px;    
+}
+.price .doll {
+    font-family: "Economica", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 1px;
+    margin-top: 19px;
+}
+.price .likes {
+    display: flex;
+    justify-content: flex-end; 
+    height: 12px;   
+}
+.wrapper-menu .view {
+    display: flex;
+    position: absolute;
+    right: 43%;
+    bottom: 12%;
+}
+.view button {
+    font-size: 18px;
+    color: #edc846;
+    text-transform: uppercase;
+    border: none;
+    background-color: black;
+}
+
+.view img {
+    margin-top: 6px;
+}
+
+// section4
 
 

@@ -440,8 +440,8 @@ body {
 }
 
 .header {
-  height: 40vh;
   position: relative;
+  height: 40vh;
 }
 
 .header .wrapper {
@@ -661,4 +661,208 @@ nav a {
   line-height: 1.4;
   letter-spacing: 1.5px;
   word-spacing: 0.2px;
+}
+
+.wrapper-menu {
+  position: relative;
+  height: 117vh;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #edc947;
+}
+
+.coffee-menu {
+  -ms-flex-preferred-size: 340px;
+      flex-basis: 340px;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside {
+  width: 130px;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  background-image: url(../img/yellowcup.png);
+  background-repeat: no-repeat;
+}
+
+aside img {
+  position: absolute;
+  top: 28%;
+  right: -5%;
+}
+
+.buttons-menu button {
+  background-color: transparent;
+  width: 194px;
+  height: 45px;
+  border: solid 2px #eec947;
+  color: #eec947;
+  border-radius: 5px;
+  letter-spacing: 2.5px;
+  text-transform: capitalize;
+  margin-left: 15px;
+  letter-spacing: 0.8px;
+}
+
+.buttons-menu .selected-button {
+  background-color: #edc947;
+  color: #121211;
+}
+
+.coffee-menu h3 {
+  color: #edc846;
+  text-transform: uppercase;
+  font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  height: 29px;
+  margin-top: 88px;
+  margin-right: 85px;
+}
+
+.wrapper-menu .menu {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buttons-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu-drinks {
+  position: relative;
+  height: 424px;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #faedb8;
+  margin-top: 30px;
+}
+
+.menu-drinks .wrapper-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  height: 131px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper-price .drinks-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 244px;
+}
+
+.wrapper-price .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 52px;
+  height: 131px;
+}
+
+.price img {
+  height: 13px;
+  margin-top: 26px;
+  margin-right: 11px;
+}
+
+.drinks-name h4 {
+  font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  height: 6px;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  margin-left: 6px;
+  letter-spacing: 1.3px;
+}
+
+.drinks-name p {
+  font-size: 14px;
+  word-spacing: 5px;
+  letter-spacing: 1.3px;
+}
+
+.price p {
+  font-size: 14px;
+  margin-top: 23px;
+}
+
+.price .doll {
+  font-family: "Economica", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  margin-top: 19px;
+}
+
+.price .likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 12px;
+}
+
+.wrapper-menu .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 43%;
+  bottom: 12%;
+}
+
+.view button {
+  font-size: 18px;
+  color: #edc846;
+  text-transform: uppercase;
+  border: none;
+  background-color: black;
+}
+
+.view img {
+  margin-top: 6px;
 }
