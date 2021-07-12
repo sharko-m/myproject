@@ -20,10 +20,8 @@ body {
 .preview {    
     height: 111vh;    
     background-image: url("../img/kafenaitcof1-22.jpg");
-    background-repeat: no-repeat;
-    // padding-top: 24px;
-    background-size: cover;
-    // padding-top: 52px;
+    background-repeat: no-repeat;    
+    background-size: cover;   
     box-sizing: border-box;
     display: flex;
     flex-direction: column;    
@@ -103,6 +101,9 @@ nav a {
     margin-top: 33px;
     height: 8px;
 }
+.wrapperkaf h2 span {
+    color: white;
+}
 
 .wrapperkaf p {    
     max-width: 516px;    
@@ -132,14 +133,14 @@ nav a {
 .services {
     padding-top: 32px;       
 }
-.wrapperser{
+.wrapperser {
     height: 220px;    
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
-.wrapperser h3{
+.wrapperser h3 {
     text-transform: uppercase;
     font-family: "Economica", sans-serif;
     font-size: 50px;
@@ -147,6 +148,9 @@ nav a {
     margin-bottom: -5px;
     margin-top: 60px;
     padding-right: 14px;    
+}
+.wrapperser h3 span {
+    color: #edc846;
 }
 .wrapperser p {
     max-width: 828px;
@@ -271,6 +275,8 @@ aside img {
     width: 35%;
     height: 131px;
     flex-wrap: wrap;
+    border-bottom: 1px solid #635957;
+    border-top: 1px solid #635957;
 }
 .wrapper-price .drinks-name {
     display: flex;
@@ -281,7 +287,7 @@ aside img {
     display: flex;
     flex-direction: column;
     width: 52px;
-    height: 131px;
+    height: 131px;    
 }
 .price img {
     height: 13px;
@@ -339,5 +345,73 @@ aside img {
 }
 
 // section4
+
+.special {
+    padding-top: 32px;       
+}
+.wrapper-special {
+    height: 232px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.wrapper-special h3 {
+    text-transform: uppercase;
+    font-family: "Economica", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -11px;
+    margin-top: 60px;
+    padding-right: 14px;
+    letter-spacing: 1px;    
+}
+.wrapper-special h3 span {
+    color: #edc846;
+}
+.wrapper-special p {
+    max-width: 828px;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    margin-right: 22px;  
+}
+
+// section5
+
+.variations-coffee {
+    height: 1410px;
+    width: 100%;
+}
+.variations-coffee .coffee-beans {
+    display: grid;    
+    grid-template-columns: repeat(2,540px);
+    grid-template-rows: repeat(3,430px); 
+}
+.coffee-beans div {
+    width: 540px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.coffee-beans h4 {
+    font-family: "Economica", sans-serif;
+    font-size: 34px;
+    color: #edc846;
+    text-transform: uppercase;
+    padding-top: 54px;
+    margin-bottom: 2px;
+    width: 360px;
+    letter-spacing: 0.8px;
+    text-align: left;
+}
+.coffee-beans p {
+    width: 360px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
 
 

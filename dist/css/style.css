@@ -550,6 +550,10 @@ nav a {
   height: 8px;
 }
 
+.wrapperkaf h2 span {
+  color: white;
+}
+
 .wrapperkaf p {
   max-width: 516px;
   line-height: 1.8;
@@ -601,6 +605,10 @@ nav a {
   margin-bottom: -5px;
   margin-top: 60px;
   padding-right: 14px;
+}
+
+.wrapperser h3 span {
+  color: #edc846;
 }
 
 .wrapperser p {
@@ -775,6 +783,8 @@ aside img {
   height: 131px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 1px solid #635957;
+  border-top: 1px solid #635957;
 }
 
 .wrapper-price .drinks-name {
@@ -865,4 +875,90 @@ aside img {
 
 .view img {
   margin-top: 6px;
+}
+
+.special {
+  padding-top: 32px;
+}
+
+.wrapper-special {
+  height: 232px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-special h3 {
+  text-transform: uppercase;
+  font-family: "Economica", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: -11px;
+  margin-top: 60px;
+  padding-right: 14px;
+  letter-spacing: 1px;
+}
+
+.wrapper-special h3 span {
+  color: #edc846;
+}
+
+.wrapper-special p {
+  max-width: 828px;
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  margin-right: 22px;
+}
+
+.variations-coffee {
+  height: 1410px;
+  width: 100%;
+}
+
+.variations-coffee .coffee-beans {
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(3, 430px);
+}
+
+.coffee-beans div {
+  width: 540px;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coffee-beans h4 {
+  font-family: "Economica", sans-serif;
+  font-size: 34px;
+  color: #edc846;
+  text-transform: uppercase;
+  padding-top: 54px;
+  margin-bottom: 2px;
+  width: 360px;
+  letter-spacing: 0.8px;
+  text-align: left;
+}
+
+.coffee-beans p {
+  width: 360px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
