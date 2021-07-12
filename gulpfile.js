@@ -170,10 +170,10 @@ function clean(params) {
   return del(path.clean);
 }
 
-function reload(done) {
-  browsersync.reload();
-  done();
-}
+// function reload(done) {
+//   browsersync.reload();
+//   done();
+// }
 
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
