@@ -11,14 +11,19 @@ body {
     overflow-x: hidden;
 }
 
-.wrapper {
-    max-width: 1080px;
+.wrapper {    
     margin-left: auto;
     margin-right: auto;   
     box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    background-color: #181a18;    
 }
+    
+
 .preview {    
-    height: 111vh;    
+    height: 100vh;    
     background-image: url("../img/kafenaitcof1-22.jpg");
     background-repeat: no-repeat;    
     background-size: cover;   
@@ -28,18 +33,16 @@ body {
 }
 .header {
     position: relative;  
-    height: 40vh;      
+    // height: 40vh;      
 }
-.header .wrapper {
-    display: flex;
-    justify-content: space-between;    
-}
+
 .logo img {
     position: absolute;
-    top: 9px;
-    left: -12px;    
-    border: solid 15px #000;
-    border-radius: 50%;          
+    top: 10px;
+    left: 8px;    
+    border: solid 15px #1a1a1a;
+    border-radius: 50%;  
+    background-color: #1a1a1a;      
 }
 .wrapper .nav-container {
     margin-top: 27px;
@@ -51,34 +54,37 @@ body {
 .nav ul {
     display: flex;
     align-items: center;
-    margin-right: 24px;
+    margin-right: 36px;
 }
 nav a {
     text-decoration: none;    
-    color: white;
+    color: #ffffff;
 }
 .nav li {
     text-transform: capitalize;
-    margin-left: 22px;
+    margin-left: 21px;
     letter-spacing: 1px;
 }
-.nav .home {
+
+.nav-container a:hover {
     color: #eec947;
 }
 .shopping, .search {
     width: 5px;
     display: flex;
-    margin-left: 8px;
-    margin-right: 24px;
+    margin-left: -3px;
+    margin-right: 35px;
     background-color: transparent;
     padding: 0px;
     border: none;
 }
 
 .kafeinate {
-    max-width: 1090px;    
+    padding-right: 9px;    
     display: flex;
-    align-items: flex-end;    
+    align-items: flex-end;
+    padding-top: 24vh;   
+    height: 32vh; 
 }
 
 .kafeinate .wrapperkaf {
@@ -88,6 +94,7 @@ nav a {
     align-items: flex-end;    
     margin-left: auto;
     box-sizing: border-box;   
+    text-align: left;
 }
 
 .wrapperkaf h2 {
@@ -128,19 +135,50 @@ nav a {
     width: 498px;
 }
 
+.slider-wrapper {
+    position: relative;
+    height: 756px;
+    margin-top: 47px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 6%;
+    left: 46%;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;    
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 6px;     
+  }
+.swiper-pagination-bullet-active {    
+    background-color: #e7a627;  
+     
+  }
+
 // section2
 
 .services {
-    padding-top: 32px;       
+    padding-top: 28px;  
+    margin-bottom: 64px;     
 }
-.wrapperser {
-    height: 220px;    
+.intro {
+    height: 232px;    
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
-.wrapperser h3 {
+.intro h3 {
     text-transform: uppercase;
     font-family: "Economica", sans-serif;
     font-size: 50px;
@@ -149,10 +187,10 @@ nav a {
     margin-top: 60px;
     padding-right: 14px;    
 }
-.wrapperser h3 span {
+.intro h3 span {
     color: #edc846;
 }
-.wrapperser p {
+.intro p {
     max-width: 828px;
     text-align: center;
     line-height: 1.5;
@@ -164,7 +202,7 @@ nav a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 17px;
+    
 }
 .services-item .items{
     width: 33%;
@@ -176,6 +214,7 @@ nav a {
     width: 72%;    
     border: solid 9px #e5e5e5;
     border-radius: 50%;
+    background-color: #e5e5e5;
 }
 .items h4 {
     height: 5px;
@@ -201,16 +240,16 @@ nav a {
 
 .wrapper-menu {
     position: relative;
-    height: 117vh;
-    margin-top: 63px;
+    height: 105vh;    
     display: flex;
     background-color: #edc947;
 }
 .coffee-menu {    
-    flex-basis: 340px;
+    flex-basis: 354px;
     flex-grow: 5;
     background-color: black;
-    justify-content: center;    
+    justify-content: center;   
+    text-align: left; 
 }
 
 aside {
@@ -249,11 +288,12 @@ aside img {
     text-align: center;
     height: 29px;
     margin-top: 88px;
-    margin-right: 85px;
+    margin-right: 60px;
 }
 .wrapper-menu .menu {
     width: auto;
-    display: flex;   
+    display: flex; 
+    margin-left: 22px;  
 }
 .buttons-menu {
     display: flex;
@@ -261,32 +301,33 @@ aside img {
 }
 .menu-drinks {
     position: relative;
-    height: 424px;
-    max-width: 700px;
+    height: 399px;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: #faedb8;
     margin-top: 30px;
 }
-.menu-drinks .wrapper-price {
+.menu-drinks .structure-drinks {
     display: flex;
     flex-direction: column;
-    width: 35%;
-    height: 131px;
+    width: 42%;
+    height: 128px;
     flex-wrap: wrap;
     border-bottom: 1px solid #635957;
     border-top: 1px solid #635957;
+    margin-left: 9px;
 }
-.wrapper-price .drinks-name {
+.structure-drinks .drinks-name {
     display: flex;
     flex-direction: column;
     width: 244px;
 }
-.wrapper-price .price {
+.structure-drinks .price {
     display: flex;
     flex-direction: column;
-    width: 52px;
+    width: 65px;
     height: 131px;    
 }
 .price img {
@@ -297,11 +338,11 @@ aside img {
 .drinks-name h4 {
     font-family: "Economica", sans-serif;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 34px;    
     height: 6px;
-    margin-top: 21px;
+    margin-top: 19px;
     margin-bottom: 32px;
-    margin-left: 6px;
+    // margin-left: 28px;
     letter-spacing: 1.3px;
 }
 .drinks-name p {
@@ -324,12 +365,12 @@ aside img {
 .price .likes {
     display: flex;
     justify-content: flex-end; 
-    height: 12px;   
+      
 }
 .wrapper-menu .view {
     display: flex;
     position: absolute;
-    right: 43%;
+    right: 42%;
     bottom: 12%;
 }
 .view button {
@@ -347,10 +388,11 @@ aside img {
 // section4
 
 .special {
-    padding-top: 32px;       
+    padding-top: 32px; 
+    padding-bottom: 28px;      
 }
 .wrapper-special {
-    height: 232px;    
+    height: 205px;    
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -362,8 +404,7 @@ aside img {
     font-size: 50px;
     text-align: center;
     margin-bottom: -11px;
-    margin-top: 60px;
-    padding-right: 14px;
+    margin-top: 60px;    
     letter-spacing: 1px;    
 }
 .wrapper-special h3 span {
@@ -381,8 +422,9 @@ aside img {
 // section5
 
 .variations-coffee {
-    height: 1410px;
+    height: 1415px;
     width: 100%;
+    padding-left: 21px;
 }
 .variations-coffee .coffee-beans {
     display: grid;    
@@ -390,8 +432,8 @@ aside img {
     grid-template-rows: repeat(3,430px); 
 }
 .coffee-beans div {
-    width: 540px;
-    height: 430px;
+    width: 100%;
+    // height: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -401,8 +443,8 @@ aside img {
     font-size: 34px;
     color: #edc846;
     text-transform: uppercase;
-    padding-top: 54px;
-    margin-bottom: 2px;
+    padding-top: 52px;
+    margin-bottom: 0px;
     width: 360px;
     letter-spacing: 0.8px;
     text-align: left;

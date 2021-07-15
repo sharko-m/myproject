@@ -416,15 +416,22 @@ body {
 }
 
 .wrapper {
-  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #181a18;
 }
 
 .preview {
-  height: 111vh;
+  height: 100vh;
   background-image: url("../img/kafenaitcof1-22.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,24 +448,15 @@ body {
 
 .header {
   position: relative;
-  height: 40vh;
-}
-
-.header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .logo img {
   position: absolute;
-  top: 9px;
-  left: -12px;
-  border: solid 15px #000;
+  top: 10px;
+  left: 8px;
+  border: solid 15px #1a1a1a;
   border-radius: 50%;
+  background-color: #1a1a1a;
 }
 
 .wrapper .nav-container {
@@ -480,21 +478,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 24px;
+  margin-right: 36px;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 .nav li {
   text-transform: capitalize;
-  margin-left: 22px;
+  margin-left: 21px;
   letter-spacing: 1px;
 }
 
-.nav .home {
+.nav-container a:hover {
   color: #eec947;
 }
 
@@ -504,21 +502,23 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 8px;
-  margin-right: 24px;
+  margin-left: -3px;
+  margin-right: 35px;
   background-color: transparent;
   padding: 0px;
   border: none;
 }
 
 .kafeinate {
-  max-width: 1090px;
+  padding-right: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-top: 24vh;
+  height: 32vh;
 }
 
 .kafeinate .wrapperkaf {
@@ -536,6 +536,7 @@ nav a {
   margin-left: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: left;
 }
 
 .wrapperkaf h2 {
@@ -579,12 +580,45 @@ nav a {
   width: 498px;
 }
 
-.services {
-  padding-top: 32px;
+.slider-wrapper {
+  position: relative;
+  height: 756px;
+  margin-top: 47px;
 }
 
-.wrapperser {
-  height: 220px;
+.swiper-pagination {
+  position: absolute;
+  bottom: 6%;
+  left: 46%;
+  text-align: center;
+  -webkit-transition: .3s opacity;
+  -o-transition: .3s opacity;
+  transition: .3s opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0px 6px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e7a627;
+}
+
+.services {
+  padding-top: 28px;
+  margin-bottom: 64px;
+}
+
+.intro {
+  height: 232px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,7 +631,7 @@ nav a {
           align-items: center;
 }
 
-.wrapperser h3 {
+.intro h3 {
   text-transform: uppercase;
   font-family: "Economica", sans-serif;
   font-size: 50px;
@@ -607,11 +641,11 @@ nav a {
   padding-right: 14px;
 }
 
-.wrapperser h3 span {
+.intro h3 span {
   color: #edc846;
 }
 
-.wrapperser p {
+.intro p {
   max-width: 828px;
   text-align: center;
   line-height: 1.5;
@@ -627,7 +661,6 @@ nav a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 17px;
 }
 
 .services-item .items {
@@ -648,6 +681,7 @@ nav a {
   width: 72%;
   border: solid 9px #e5e5e5;
   border-radius: 50%;
+  background-color: #e5e5e5;
 }
 
 .items h4 {
@@ -673,8 +707,7 @@ nav a {
 
 .wrapper-menu {
   position: relative;
-  height: 117vh;
-  margin-top: 63px;
+  height: 105vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,8 +715,8 @@ nav a {
 }
 
 .coffee-menu {
-  -ms-flex-preferred-size: 340px;
-      flex-basis: 340px;
+  -ms-flex-preferred-size: 354px;
+      flex-basis: 354px;
   -webkit-box-flex: 5;
       -ms-flex-positive: 5;
           flex-grow: 5;
@@ -691,6 +724,7 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
 }
 
 aside {
@@ -735,7 +769,7 @@ aside img {
   text-align: center;
   height: 29px;
   margin-top: 88px;
-  margin-right: 85px;
+  margin-right: 60px;
 }
 
 .wrapper-menu .menu {
@@ -743,6 +777,7 @@ aside img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 22px;
 }
 
 .buttons-menu {
@@ -756,8 +791,7 @@ aside img {
 
 .menu-drinks {
   position: relative;
-  height: 424px;
-  max-width: 700px;
+  height: 399px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,7 +805,7 @@ aside img {
   margin-top: 30px;
 }
 
-.menu-drinks .wrapper-price {
+.menu-drinks .structure-drinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,15 +813,16 @@ aside img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 35%;
-  height: 131px;
+  width: 42%;
+  height: 128px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-bottom: 1px solid #635957;
   border-top: 1px solid #635957;
+  margin-left: 9px;
 }
 
-.wrapper-price .drinks-name {
+.structure-drinks .drinks-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +833,7 @@ aside img {
   width: 244px;
 }
 
-.wrapper-price .price {
+.structure-drinks .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,7 +841,7 @@ aside img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 52px;
+  width: 65px;
   height: 131px;
 }
 
@@ -821,9 +856,8 @@ aside img {
   font-weight: 400;
   font-size: 34px;
   height: 6px;
-  margin-top: 21px;
+  margin-top: 19px;
   margin-bottom: 32px;
-  margin-left: 6px;
   letter-spacing: 1.3px;
 }
 
@@ -853,7 +887,6 @@ aside img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 12px;
 }
 
 .wrapper-menu .view {
@@ -861,7 +894,7 @@ aside img {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 43%;
+  right: 42%;
   bottom: 12%;
 }
 
@@ -879,10 +912,11 @@ aside img {
 
 .special {
   padding-top: 32px;
+  padding-bottom: 28px;
 }
 
 .wrapper-special {
-  height: 232px;
+  height: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,7 +936,6 @@ aside img {
   text-align: center;
   margin-bottom: -11px;
   margin-top: 60px;
-  padding-right: 14px;
   letter-spacing: 1px;
 }
 
@@ -920,8 +953,9 @@ aside img {
 }
 
 .variations-coffee {
-  height: 1410px;
+  height: 1415px;
   width: 100%;
+  padding-left: 21px;
 }
 
 .variations-coffee .coffee-beans {
@@ -931,8 +965,7 @@ aside img {
 }
 
 .coffee-beans div {
-  width: 540px;
-  height: 430px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,8 +983,8 @@ aside img {
   font-size: 34px;
   color: #edc846;
   text-transform: uppercase;
-  padding-top: 54px;
-  margin-bottom: 2px;
+  padding-top: 52px;
+  margin-bottom: 0px;
   width: 360px;
   letter-spacing: 0.8px;
   text-align: left;
