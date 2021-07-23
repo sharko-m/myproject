@@ -10,17 +10,12 @@ body {
     background-color: #fff;
     overflow-x: hidden;
 }
-
-.wrapper {    
-    // margin-left: auto;
-    // margin-right: auto;   
-    // box-sizing: border-box;
+.wrapper { 
     position: relative;
     display: flex;
     justify-content: space-between; 
     background-color: #181a18;    
-}
-    
+}   
 
 .preview {    
     height: 100vh;      
@@ -143,9 +138,10 @@ nav a {
 .button-order {
     width: 498px;
 }
-.button-order a {
+.button-order button {
     text-decoration: none;
     color: #eec947;
+    cursor: pointer;
 }
 
 .slider-wrapper {
@@ -162,116 +158,31 @@ nav a {
 
 .image-slider .swiper-pagination {
     position: absolute;
-    bottom: 7%;
+    bottom: 16%;
     text-align: center;
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
 }
 
-
 .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    background-color: #ffffff;    
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff; 
+    opacity: 90%;
     border-radius: 50%;
     cursor: pointer;
-    margin: 0px 6px;     
+    margin: 0px 10px;     
   }
 .swiper-pagination-bullet-active {    
     background-color: #e7a627;  
   }
 
-
-
-
-
-
-
-
-
-
-
-//   .slider-cards {
-//     max-width: 1220px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     box-sizing: border-box;
-//     height: 100vh;
-//     background-color: #3f3f3f;
-// }
-
-// .space-logotip {
-//     text-align: center;
-//     width: 100%;
-//     padding-top: 30px;
-//     margin-bottom: 30px;
-//     cursor: pointer;
-// }
-// .slider-wrapper {
-//     position: relative;
-//     height: 756px;
-//     // margin-top: 47px;
-// }
-// // .image-slider {
-// //     padding-bottom: 70px;
-// // }
-
-//   .image-slider__image {
-//       text-align: center;
-      
-//   }
-// .image-slider__image img {
-//     height: 80vh;
-//     opacity: .9;
-//     width: 91%;
-
-// }
-//   .kafeinate {
-//     z-index: 10;
-//     position: absolute;
-//     top: 18%;
-//     width: 34%;
-//     left: 6%;
-//     height: 41vh;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     justify-content: space-between;
-// }
-
-
-// .image-slider .swiper-pagination {
-//     position: absolute;
-//     bottom: 6%;
-// }
-// .image-slider .swiper-pagination-bullet {
-//     width: 7px;
-//     height: 7px;
-//     background-color: #3f3f3f;
-//     border: 3px solid #e4bb7a;
-//     border-radius: 50%;
-//     cursor: pointer;
-//     margin: 0 18px;        
-//   }
-
-
-
-
-
-
-
-
-
-
-
-
 // section2
 
 .services {
-    height: 763px;
+    // height: 763px;
+    height: 103vh;
     max-width: 1120px;
     padding-left: 15px;
     padding-right: 15px;
@@ -348,15 +259,12 @@ nav a {
     word-spacing: 0.2px;
     margin: 0;
     padding-top: 48px;
-
 }
 
 // section3
 
 .wrapper-menu {
-    max-width: 1120px;
-    // padding-left: 15px;
-    // padding-right: 15px;
+    max-width: 1120px;   
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -400,10 +308,18 @@ aside img {
     margin-left: 15px;
     letter-spacing: 0.8px;
 }
-.buttons-menu .selected-button {
+
+.selected-button:active {
     background-color: #edc947;
     color: #121211;
 }
+.buttons-menu .selected-button:hover {
+    background-color: #edc947;
+    color: #121211;
+    border: none;
+    cursor: pointer;
+}
+
 .coffee-menu h3 {
     color: #edc846;
     text-transform: uppercase;
@@ -445,12 +361,6 @@ aside img {
     margin-left: 12px;
 }
 
-
-.buttons-menu .selected-button {
-    background-color: #edc947;
-    color: #ffffff;
-    border: none;
-}
 .structure-drinks .drinks-name {
     display: flex;
     flex-direction: column;
@@ -503,7 +413,7 @@ aside img {
     display: flex;
     position: absolute;
     right: 42%;
-    bottom: 12%;
+    bottom: 7%;
 }
 .view button {
     font-size: 18px;
@@ -511,6 +421,7 @@ aside img {
     text-transform: uppercase;
     border: none;
     background-color: black;
+    cursor: pointer;
 }
 
 .view img {
@@ -559,9 +470,9 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    height: 1388px;
-    width: 100%;
-    
+    // height: 1388px;
+    height: 187vh;
+    width: 100%;    
 }
 .variations-coffee .coffee-beans {
     display: grid;    
@@ -613,9 +524,11 @@ aside img {
     margin-right: auto;
     box-sizing: border-box;
     background-image: url("../img/blackcoffee.jpg");
-    background-repeat: no-repeat;    
-    background-position: bottom;    
-    height: 444px;  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: bottom; 
+    height: 60vh;   
+    // height: 444px;  
 }
 .history-about .arabica {
     height: 263px;
@@ -670,7 +583,8 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    height: 1373px;
+    height: 185vh;
+    // height: 1373px;
 }
 .breakfast-menu h3 { 
     height: 75px;   
@@ -715,18 +629,15 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    height: 980px;    
+    height: 980px;  
+    // height: 233vh;  
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 25px;    
     margin: 0;
 }
-// .box::after {
-//     content: '';
-//     display: block;
-//     padding-top: 100%;
-// }
+
 .hide {
     display: none;
 }
@@ -759,8 +670,6 @@ aside img {
     width: 170px;
     height: 46px; 
     border-color: #1c1c1a;   
-    
-    
 }
 .box-button a {
     text-decoration: none;
@@ -781,7 +690,6 @@ aside img {
     height: 411px;
 }
 
-
 .box-cards span {
     height: 52px;
     width: 65px;
@@ -798,8 +706,7 @@ aside img {
 .breakfast-menu .view {
     display: flex;
     justify-content: flex-end;
-    padding-top: 8px;   
-    
+    padding-top: 8px;     
 }
 .breakfast-menu .view button {
     font-size: 18px;
@@ -807,7 +714,7 @@ aside img {
     text-transform: uppercase;
     border: none;
     background-color: transparent;
-
+    cursor: pointer;
 }
 
 // section 8
@@ -824,6 +731,12 @@ aside img {
     height: 96vh;
     // height: 104vh;
     position: relative;
+}
+.swiper-cont .swiper-container-autoheight {
+    height: 97vh;
+}
+.swiper-cont .swiper-container-autoheight .swiper-slide {
+    height: 97vh;
 }
 .reviews .visitors {
     display: flex;
@@ -886,32 +799,29 @@ aside img {
 .review-card {
     display: flex;
     justify-content: center;    
-    
 }
 .visitors p {
     letter-spacing: 0.9px;
 }
 .swiper-cont .swiper-pagination {
-    position: absolute;
-    bottom: 13%;
+    position: absolute;    
+    bottom: 10%;
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
 }
 
-
 .swiper-cont .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #ffffff;  
-    color: #ffffff;  
+    background-color: #e7a627;  
+    color: #e7a627;  
     border-radius: 50%;
     cursor: pointer;
-    margin: 0px 6px;     
+    margin: 0px 10px;     
   }
 .swiper-cont .swiper-pagination-bullet-active {    
-    background-color: #e7a627;  
-     
+    background-color: #ffffff;      
   }
 
 //   section 9
@@ -923,9 +833,8 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;  
-    height: 84vh;  
-
-    margin-top: 106px;
+    height: 73vh;  
+    margin-top: 80px;
 }
 .about h3 {
     font-family: "Economica", sans-serif;
@@ -934,7 +843,7 @@ aside img {
     color: #121211;
     text-align: center;
     margin: 0;
-    padding-top: 90px;
+    padding-top: 8px;
 }
 .about .contacts {
     display: flex;    
@@ -995,7 +904,8 @@ aside img {
     margin-top: 20px;
 }
 .message-area {
-    margin-top: 20px;    
+    margin-top: 20px;  
+    width: 545px;  
 }
 textarea {
     border: none;
@@ -1011,7 +921,7 @@ textarea {
     cursor: pointer;
 }
 
-// section 9
+// section 10
 
 .subscription {
     max-width: 1120px;
@@ -1041,6 +951,7 @@ textarea {
     margin-top: 97px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .booking p {
     text-align: center;
@@ -1057,8 +968,7 @@ textarea {
     height: 32px;
     background-color: #090909;
     color: #ffffff;
-    border: none;
-     
+    border: none;     
 }
 .booking input[type="email"]::placeholder { 
     color: #ffffff;    
@@ -1081,18 +991,19 @@ textarea {
     bottom: 16%;    
  }
 
- footer {
-     height: 8vh;
-     background-color: #ebbf45;
+//  footer___
 
- }
- .design {
-    max-width: 1120px;
+ footer {
+     height: 10vh;
+     background-color: #ebbf45;
+     max-width: 1120px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+ }
+ .design {    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1110,6 +1021,437 @@ textarea {
  }
 
 
+ @media all and (max-width: 780px) {
+    .container-box {      
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);  
+        height: 191vh;      
+    }
+    .services {
+        height: 116vh;
+    }
+    .special {
+        padding: 0px;
+    }
+    .variations-coffee {
+        height: 165vh;
+    }
+    .items p {
+        width: 30%;
+    }
+    aside {
+        display: none;
+    }
+    .btns-container button {
+        margin-left: 15px;
+    }
+    .breakfast-menu {
+        height: 278vh;
+    }
+    .review-card img {
+        display: none;
+    }
+    .about .contacts {
+        display: flex;   
+        flex-direction: column; 
+    }
+    .contacts .public {
+        width: 100%;
+    }
+    .contacts .adress {
+        width: 100%;
+    }
+    .about {
+        height: 122vh;
+        margin-top: 0px;
+    }    
+    .wrapper-menu {
+        background-color: transparent;
+    }
+    .coffee-beans div {        
+        width: 100%;
+        height: 100%;
+    }    
+    .swiper-cont .reviews {
+        height: 91vh;
+    }
+    .swiper-cont .swiper-pagination {
+        position: absolute;
+        bottom: 8%;        
+    }
+    .swiper-cont .swiper-container-autoheight .swiper-slide {
+        height: 93vh;
+    }
+    .breakfast-menu .view {
+        display: none;
+    }
+    .subscription {
+        height: 69vh;
+    }
+    .arrow-up {
+        bottom: 9%;
+    }
+    
+}
+    
+    @media all and (max-width: 430px) {
+        .kafenaite-about {
+            font-size: 10px;
+        }
+        .kafeinate .kafenaite-about {
+            width: 100%;
+            padding-right: 130px;
+        }
+        .kafenaite-about h2 {
+            font-size: 30px;
+        }
+        .kafenaite-about p {
+           display: none;      
+        }
+        .kafenaite-about button {
+            width: 152px;
+            height: 37px;
+        }
+        .button-order button {
+            font-size: 16px;
+        }
+        .slider-wrapper {
+            height: 72vh;
+        }
+        .swiper-cont .reviews {
+            height: 76vh;
+        }
+        .services .services-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-box {             
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);        
+        }
+        .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+            height: 72vh;
+        }
+        .swiper-cont .swiper-pagination {
+            bottom: 7%;
+        }
+        .swiper-cont .swiper-container-autoheight .swiper-slide {
+            height: 75vh;
+        }
+        .swiper-cont .swiper-container-autoheight {
+            height: 76vh;
+        }
+        .wrapper-menu {
+            display: flex;
+            flex-direction: column;
+            height: 165vh;
+        }
+        .wrapper-special {
+            height: 40vh;
+        }
+        .wrapper-special h3 {
+            font-size: 36px;
+        }
+        .wrapper-special p {
+            font-size: 17px;
+        }
+        .wrapper-menu .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;  
+        }
+        .menu-drinks {
+            flex-wrap: inherit;
+        }
+        .buttons-menu button {
+            width: 100%;
+        }
+        .services-item .items {
+            width: 100%;
+        }
+        .services {
+            height: 100%;
+        }
+        .variations-coffee {
+            height: 98vh;
+        }
+        .menu-drinks .structure-drinks {            
+            width: 100%;            
+            border: none;
+            margin-left: 12px;
+        }
+        .coffee-menu .view {
+            display: none;
+        }
+        .wrapper {
+            opacity: 0.6;
+            height: 92%;            
+        }
+        .logo img {
+            width: 28%;
+            position: absolute;
+            top: 0px;
+            left: 8px;
+        }
+        .wrapper .nav-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        .nav ul {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+        }
+        .nav-container .search {
+            position: absolute;
+            top: 100%;
+            right: 7%;
+        }
+        .nav-container .shopping {
+            position: absolute;
+           top: 100%;
+            right: 15%;
+        }
+        .items img {
+            display: none;
+        }
+        .items p {
+            width: 100%;
+        }
+        .variations-coffee .coffee-beans {
+            display: grid;             
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3,1fr);            
+        }
+        .coffee-beans .bean-box1 {
+            display: none;
+        }
+        .coffee-beans .bean-box4 {
+            display: none;
+        }
+        .coffee-beans .bean-box5 {
+            display: none;
+        }
+        .coffee-beans img {
+            display: none;
+        }
+        .coffee-beans h4 {
+            padding-top: 15px;
+        }
+        .coffee-beans div {
+            width: 100%;
+            height: 100%;
+        }
+        .coffee-beans p {
+            font-size: 16px;
+        }
+        
+        .coffee-menu {    
+            width: 100%;
+            background-color: black;
+            justify-content: center;   
+            text-align: left; 
+        }
+        .history-about {
+            height: 85vh;
+        }
+        .btns-container {
+            margin-top: 45px;
+        }
+        .breakfast-menu h3 {
+            font-size: 33px;
+            padding-top: 45px;
+            height: 15px;
+        }
+        .btns-container button {
+            font-size: 12px;
+            width: 100%;
+            margin-left: 15px;
+        }
+        .breakfast-menu {
+            height: 507vh;
+        }
+        .breakfast-menu .view {
+            display: none;
+        }
+        .visitors h3 {
+            margin-top: 0px;
+            font-size: 34px;
+        }
+        .visitors .review-card p {
+            font-size: 16px;
+        }
+        .name-mail {
+            flex-direction: column;
+            width: 100%;
+        }
+        .name-mail input {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        .teamwork select {
+            width: 100%;
+        }
+        .message-area, textarea {
+            width: 100%;
+        }
+        .send input {
+            width: 100%;
+        }
+        .about {
+            height: 137vh;
+        }
+        .about h3 {
+            font-size: 34px;
+        }
+        .little-logo {
+            margin-top: 18px;
+        }
+        .booking p {
+            font-size: 16px;
+        }
+        .subscription {
+            height: 55vh;
+        }
+        .booking input {
+            width: 275px;
+        }
+        .design p {
+            padding-left: 0; 
+            padding-top: 0;    
+            font-size: 10px;
+        }
+        .social img {
+            width: 11%;
+        }
+        .social {
+            width: 40%;
+        }
+        footer {
+            height: 6vh;
+        }          
+
+        
+    }
+
+    @media all and (max-width: 320px) {
+        .preview {
+            height: 75vh;
+        }
+        .slider-wrapper {
+            height: 47vh;
+        }
+        .button-order {
+            width: 18%;
+            margin-top: 35px;
+        }
+        .kafenaite-about h2 {
+            width: 20%;
+        }
+        .kafeinate {
+            padding-top: 70px;
+        }
+        .image-slider .swiper-pagination {
+            bottom: 39%;
+        }
+        .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+            height: 47vh;
+        }
+        .image-slider .swiper-pagination {
+            bottom: 12%;
+        }
+        .intro h3 {
+            font-size: 34px;
+            padding-top: 0;
+        }
+        .intro {
+            height: 37vh;
+        }
+        .items p {
+            font-size: 16px;
+        }
+        .services-item .items {
+            height: 19vh;
+        }
+        .wrapper-menu .menu {
+            margin-left: 0;
+        }
+        .structure-drinks .price {
+            margin-right: 15px;
+        }
+        .coffee-menu h3 {
+            margin-top: 0;
+            margin-right: 0;
+        }
+        .buttons-menu button {
+            font-size: 16px;
+            height: 43px;
+            margin-left: 8px;
+        }
+        .wrapper-menu {
+            height: 150vh;
+        }
+        .coffee-beans div {
+            align-items: flex-start;
+        }
+        .coffee-beans p {
+            padding-right: 0;
+            width: 76%;
+        }
+        .variations-coffee {
+            height: 110vh;
+        }
+        .arabica h3 {
+            font-size: 34px;
+        }
+        .history-about .arabica {
+            padding-top: 0;
+            padding-left: 0;
+            height: 76vh;
+        }
+        .btns-container {
+            margin-top: 65px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .breakfast-menu {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .box-cards img {
+            width: 100%;
+        }
+        .container-box .box p {
+            width: 100%;
+        }
+        .container-box {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .swiper-cont .swiper-pagination {
+            bottom: 2%;
+        }
+        .subscription {
+            height: 60vh;
+        }
+        .social img {
+            margin-right: 3px;
+        }
+        .social {
+            width: 40%;
+        }
+        .booking input[type="email"]::placeholder { 
+            font-size: 16px;    
+        }
+        .arrow-up {
+            bottom: 16%;
+         }
+
+    }
+    
+   
+ 
 
 
 

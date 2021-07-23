@@ -584,9 +584,10 @@ nav a {
   width: 498px;
 }
 
-.button-order a {
+.button-order button {
   text-decoration: none;
   color: #eec947;
+  cursor: pointer;
 }
 
 .slider-wrapper {
@@ -606,7 +607,7 @@ nav a {
 
 .image-slider .swiper-pagination {
   position: absolute;
-  bottom: 7%;
+  bottom: 16%;
   text-align: center;
   -webkit-transition: .3s opacity;
   -o-transition: .3s opacity;
@@ -617,12 +618,13 @@ nav a {
 }
 
 .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: #ffffff;
+  opacity: 90%;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0px 6px;
+  margin: 0px 10px;
 }
 
 .swiper-pagination-bullet-active {
@@ -630,7 +632,7 @@ nav a {
 }
 
 .services {
-  height: 763px;
+  height: 103vh;
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -783,9 +785,16 @@ aside img {
   letter-spacing: 0.8px;
 }
 
-.buttons-menu .selected-button {
+.selected-button:active {
   background-color: #edc947;
   color: #121211;
+}
+
+.buttons-menu .selected-button:hover {
+  background-color: #edc947;
+  color: #121211;
+  border: none;
+  cursor: pointer;
 }
 
 .coffee-menu h3 {
@@ -848,12 +857,6 @@ aside img {
   border-bottom: 1px solid #635957;
   border-top: 1px solid #635957;
   margin-left: 12px;
-}
-
-.buttons-menu .selected-button {
-  background-color: #edc947;
-  color: #ffffff;
-  border: none;
 }
 
 .structure-drinks .drinks-name {
@@ -929,7 +932,7 @@ aside img {
   display: flex;
   position: absolute;
   right: 42%;
-  bottom: 12%;
+  bottom: 7%;
 }
 
 .view button {
@@ -938,6 +941,7 @@ aside img {
   text-transform: uppercase;
   border: none;
   background-color: black;
+  cursor: pointer;
 }
 
 .view img {
@@ -993,7 +997,7 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 1388px;
+  height: 187vh;
   width: 100%;
 }
 
@@ -1057,8 +1061,9 @@ aside img {
           box-sizing: border-box;
   background-image: url("../img/blackcoffee.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: bottom;
-  height: 444px;
+  height: 60vh;
 }
 
 .history-about .arabica {
@@ -1123,7 +1128,7 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 1373px;
+  height: 185vh;
 }
 
 .breakfast-menu h3 {
@@ -1272,6 +1277,7 @@ aside img {
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .swiper-cont .reviews {
@@ -1286,6 +1292,14 @@ aside img {
   background-repeat: no-repeat;
   height: 96vh;
   position: relative;
+}
+
+.swiper-cont .swiper-container-autoheight {
+  height: 97vh;
+}
+
+.swiper-cont .swiper-container-autoheight .swiper-slide {
+  height: 97vh;
 }
 
 .reviews .visitors {
@@ -1374,7 +1388,7 @@ aside img {
 
 .swiper-cont .swiper-pagination {
   position: absolute;
-  bottom: 13%;
+  bottom: 10%;
   -webkit-transition: .3s opacity;
   -o-transition: .3s opacity;
   transition: .3s opacity;
@@ -1386,15 +1400,15 @@ aside img {
 .swiper-cont .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: #e7a627;
+  color: #e7a627;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0px 6px;
+  margin: 0px 10px;
 }
 
 .swiper-cont .swiper-pagination-bullet-active {
-  background-color: #e7a627;
+  background-color: #ffffff;
 }
 
 .about {
@@ -1405,8 +1419,8 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 84vh;
-  margin-top: 106px;
+  height: 73vh;
+  margin-top: 80px;
 }
 
 .about h3 {
@@ -1416,7 +1430,7 @@ aside img {
   color: #121211;
   text-align: center;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 8px;
 }
 
 .about .contacts {
@@ -1506,6 +1520,7 @@ aside img {
 
 .message-area {
   margin-top: 20px;
+  width: 545px;
 }
 
 textarea {
@@ -1562,6 +1577,7 @@ textarea {
   margin-top: 97px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .booking p {
@@ -1623,11 +1639,8 @@ textarea {
 }
 
 footer {
-  height: 8vh;
+  height: 10vh;
   background-color: #ebbf45;
-}
-
-.design {
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1635,6 +1648,9 @@ footer {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1660,4 +1676,604 @@ footer {
 
 .social img {
   margin-right: 14px;
+}
+
+@media all and (max-width: 780px) {
+  .container-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 191vh;
+  }
+
+  .services {
+    height: 116vh;
+  }
+
+  .special {
+    padding: 0px;
+  }
+
+  .variations-coffee {
+    height: 165vh;
+  }
+
+  .items p {
+    width: 30%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .btns-container button {
+    margin-left: 15px;
+  }
+
+  .breakfast-menu {
+    height: 278vh;
+  }
+
+  .review-card img {
+    display: none;
+  }
+
+  .about .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts .public {
+    width: 100%;
+  }
+
+  .contacts .adress {
+    width: 100%;
+  }
+
+  .about {
+    height: 122vh;
+    margin-top: 0px;
+  }
+
+  .wrapper-menu {
+    background-color: transparent;
+  }
+
+  .coffee-beans div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-cont .reviews {
+    height: 91vh;
+  }
+
+  .swiper-cont .swiper-pagination {
+    position: absolute;
+    bottom: 8%;
+  }
+
+  .swiper-cont .swiper-container-autoheight .swiper-slide {
+    height: 93vh;
+  }
+
+  .breakfast-menu .view {
+    display: none;
+  }
+
+  .subscription {
+    height: 69vh;
+  }
+
+  .arrow-up {
+    bottom: 9%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .kafenaite-about {
+    font-size: 10px;
+  }
+
+  .kafeinate .kafenaite-about {
+    width: 100%;
+    padding-right: 130px;
+  }
+
+  .kafenaite-about h2 {
+    font-size: 30px;
+  }
+
+  .kafenaite-about p {
+    display: none;
+  }
+
+  .kafenaite-about button {
+    width: 152px;
+    height: 37px;
+  }
+
+  .button-order button {
+    font-size: 16px;
+  }
+
+  .slider-wrapper {
+    height: 72vh;
+  }
+
+  .swiper-cont .reviews {
+    height: 76vh;
+  }
+
+  .services .services-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .container-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .swiper-container-autoheight,
+  .swiper-container-autoheight .swiper-slide {
+    height: 72vh;
+  }
+
+  .swiper-cont .swiper-pagination {
+    bottom: 7%;
+  }
+
+  .swiper-cont .swiper-container-autoheight .swiper-slide {
+    height: 75vh;
+  }
+
+  .swiper-cont .swiper-container-autoheight {
+    height: 76vh;
+  }
+
+  .wrapper-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 165vh;
+  }
+
+  .wrapper-special {
+    height: 40vh;
+  }
+
+  .wrapper-special h3 {
+    font-size: 36px;
+  }
+
+  .wrapper-special p {
+    font-size: 17px;
+  }
+
+  .wrapper-menu .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .menu-drinks {
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+  }
+
+  .buttons-menu button {
+    width: 100%;
+  }
+
+  .services-item .items {
+    width: 100%;
+  }
+
+  .services {
+    height: 100%;
+  }
+
+  .variations-coffee {
+    height: 98vh;
+  }
+
+  .menu-drinks .structure-drinks {
+    width: 100%;
+    border: none;
+    margin-left: 12px;
+  }
+
+  .coffee-menu .view {
+    display: none;
+  }
+
+  .wrapper {
+    opacity: 0.6;
+    height: 92%;
+  }
+
+  .logo img {
+    width: 28%;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+  }
+
+  .wrapper .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 16px;
+  }
+
+  .nav-container .search {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+  }
+
+  .nav-container .shopping {
+    position: absolute;
+    top: 100%;
+    right: 15%;
+  }
+
+  .items img {
+    display: none;
+  }
+
+  .items p {
+    width: 100%;
+  }
+
+  .variations-coffee .coffee-beans {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .coffee-beans .bean-box1 {
+    display: none;
+  }
+
+  .coffee-beans .bean-box4 {
+    display: none;
+  }
+
+  .coffee-beans .bean-box5 {
+    display: none;
+  }
+
+  .coffee-beans img {
+    display: none;
+  }
+
+  .coffee-beans h4 {
+    padding-top: 15px;
+  }
+
+  .coffee-beans div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .coffee-beans p {
+    font-size: 16px;
+  }
+
+  .coffee-menu {
+    width: 100%;
+    background-color: black;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+  }
+
+  .history-about {
+    height: 85vh;
+  }
+
+  .btns-container {
+    margin-top: 45px;
+  }
+
+  .breakfast-menu h3 {
+    font-size: 33px;
+    padding-top: 45px;
+    height: 15px;
+  }
+
+  .btns-container button {
+    font-size: 12px;
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .breakfast-menu {
+    height: 507vh;
+  }
+
+  .breakfast-menu .view {
+    display: none;
+  }
+
+  .visitors h3 {
+    margin-top: 0px;
+    font-size: 34px;
+  }
+
+  .visitors .review-card p {
+    font-size: 16px;
+  }
+
+  .name-mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
+  .name-mail input {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .teamwork select {
+    width: 100%;
+  }
+
+  .message-area,
+  textarea {
+    width: 100%;
+  }
+
+  .send input {
+    width: 100%;
+  }
+
+  .about {
+    height: 137vh;
+  }
+
+  .about h3 {
+    font-size: 34px;
+  }
+
+  .little-logo {
+    margin-top: 18px;
+  }
+
+  .booking p {
+    font-size: 16px;
+  }
+
+  .subscription {
+    height: 55vh;
+  }
+
+  .booking input {
+    width: 275px;
+  }
+
+  .design p {
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 10px;
+  }
+
+  .social img {
+    width: 11%;
+  }
+
+  .social {
+    width: 40%;
+  }
+
+  footer {
+    height: 6vh;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .preview {
+    height: 75vh;
+  }
+
+  .slider-wrapper {
+    height: 47vh;
+  }
+
+  .button-order {
+    width: 18%;
+    margin-top: 35px;
+  }
+
+  .kafenaite-about h2 {
+    width: 20%;
+  }
+
+  .kafeinate {
+    padding-top: 70px;
+  }
+
+  .image-slider .swiper-pagination {
+    bottom: 39%;
+  }
+
+  .swiper-container-autoheight,
+  .swiper-container-autoheight .swiper-slide {
+    height: 47vh;
+  }
+
+  .image-slider .swiper-pagination {
+    bottom: 12%;
+  }
+
+  .intro h3 {
+    font-size: 34px;
+    padding-top: 0;
+  }
+
+  .intro {
+    height: 37vh;
+  }
+
+  .items p {
+    font-size: 16px;
+  }
+
+  .services-item .items {
+    height: 19vh;
+  }
+
+  .wrapper-menu .menu {
+    margin-left: 0;
+  }
+
+  .structure-drinks .price {
+    margin-right: 15px;
+  }
+
+  .coffee-menu h3 {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .buttons-menu button {
+    font-size: 16px;
+    height: 43px;
+    margin-left: 8px;
+  }
+
+  .wrapper-menu {
+    height: 150vh;
+  }
+
+  .coffee-beans div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .coffee-beans p {
+    padding-right: 0;
+    width: 76%;
+  }
+
+  .variations-coffee {
+    height: 110vh;
+  }
+
+  .arabica h3 {
+    font-size: 34px;
+  }
+
+  .history-about .arabica {
+    padding-top: 0;
+    padding-left: 0;
+    height: 76vh;
+  }
+
+  .btns-container {
+    margin-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .breakfast-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .box-cards img {
+    width: 100%;
+  }
+
+  .container-box .box p {
+    width: 100%;
+  }
+
+  .container-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-cont .swiper-pagination {
+    bottom: 2%;
+  }
+
+  .subscription {
+    height: 60vh;
+  }
+
+  .social img {
+    margin-right: 3px;
+  }
+
+  .social {
+    width: 40%;
+  }
+
+  .booking input[type="email"]::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .booking input[type="email"]::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .booking input[type="email"]:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .booking input[type="email"]::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .booking input[type="email"]::placeholder {
+    font-size: 16px;
+  }
+
+  .arrow-up {
+    bottom: 16%;
+  }
 }

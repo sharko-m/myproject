@@ -71,32 +71,33 @@ function removeClass(btnsArr, className) {
 }
 
 
-// let btnsContainer = document.querySelector('.buttons-menu')
 
-// btnsContainer.addEventListener('click', function(e) {
-// 	if (!e.target.closest("button")) return;
-// 	let btn = e.target.closest("button");
-// 	if (btn.classList.contains('selected-button')) return;
+let btnsContainer = document.querySelector('.buttons-menu')
 
-//     let btns = Array.from(this.querySelectorAll('button'));
+btnsContainer.addEventListener('click', function(e) {
+	if (!e.target.closest("button")) return;
+	let btn = e.target.closest("button");
+	if (btn.classList.contains('active')) return;
 
-//     removeClass(btns, 'selected-button');
-//     btn.classList.add('selected-button');
+    let btns = Array.from(this.querySelectorAll('button'));
 
-//     let btnId = btn.id;
+    removeClass(btns, 'active');
+    btn.classList.add('active');
+
+    let btnId = btn.id;
     
-//     let boxs = Array.from(document.querySelectorAll('.box'));
-//     removeClass(boxs, 'hide');
-//     if (btnId === 'Drinks') return;
+    let boxs = Array.from(document.querySelectorAll('.box'));
+    removeClass(boxs, 'hide');
+    if (btnId === 'Drinks') return;
 
-//     boxs 
-//         .filter(box => box.dataset.box !== btnId)
-//         .map(box => box.classList.add('hide'));
+    boxs 
+        .filter(box => box.dataset.box !== btnId)
+        .map(box => box.classList.add('hide'));
         
-// });
+});
 
-// function removeClass(btnsArr, className) {
-//     btnsArr 
-//         .filter(item => item.classList.contains(className))
-//         .map(item => item.classList.remove(className));
-// }
+function removeClass(btnsArr, className) {
+    btnsArr 
+        .filter(item => item.classList.contains(className))
+        .map(item => item.classList.remove(className));
+}
