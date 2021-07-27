@@ -413,9 +413,10 @@ body {
   color: #212121;
   background-color: #fff;
   overflow-x: hidden;
+  margin: 0;
 }
 
-.wrapper {
+.header .wrapper {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,9 +429,6 @@ body {
 
 .preview {
   height: 100vh;
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url("../img/kafenaitcof1-22.jpg");
@@ -448,6 +446,10 @@ body {
 
 .header {
   position: relative;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .logo img {
@@ -496,6 +498,24 @@ nav a {
   color: #eec947;
 }
 
+.nav-container .shopping:hover {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-container .search:hover {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .shopping,
 .search {
   width: 5px;
@@ -523,7 +543,7 @@ nav a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 127px;
+  height: 81vh;
 }
 
 .kafeinate .kafenaite-about {
@@ -538,7 +558,7 @@ nav a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: auto;
+  margin-bottom: 180px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
@@ -590,24 +610,20 @@ nav a {
   cursor: pointer;
 }
 
+.button-order button:hover {
+  background-color: #eec947;
+  color: #181a18;
+}
+
 .slider-wrapper {
   position: relative;
   height: 756px;
   margin-top: 47px;
 }
 
-.image-slider__wrapper {
-  height: 685px;
-}
-
-.swiper-container-autoheight,
-.swiper-container-autoheight .swiper-slide {
-  height: 607px;
-}
-
 .image-slider .swiper-pagination {
   position: absolute;
-  bottom: 16%;
+  bottom: 7%;
   text-align: center;
   -webkit-transition: .3s opacity;
   -o-transition: .3s opacity;
@@ -632,7 +648,6 @@ nav a {
 }
 
 .services {
-  height: 103vh;
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -644,7 +659,6 @@ nav a {
 }
 
 .intro {
-  height: 232px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,6 +669,7 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 25px;
 }
 
 .intro h3 {
@@ -679,13 +694,13 @@ nav a {
 }
 
 .services .services-item {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 72px;
 }
 
 .services-item .items {
@@ -730,49 +745,46 @@ nav a {
   padding-top: 48px;
 }
 
+.wrapper {
+  position: relative;
+  background-color: #181a18;
+  background-position: left;
+}
+
 .wrapper-menu {
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  height: 104vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #edc947;
+  padding-left: 223px;
 }
 
 .coffee-menu {
-  -ms-flex-preferred-size: 354px;
-      flex-basis: 354px;
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
-  background-color: black;
+  background-color: #181a18;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
+  width: 70%;
 }
 
 aside {
-  width: 12%;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  width: 30%;
   background-image: url(../img/yellowcup.png);
   background-repeat: no-repeat;
+  background-color: #edc947;
+  padding-right: 100px;
 }
 
 aside img {
   position: absolute;
   top: 28%;
-  right: -2%;
+  right: 4%;
 }
 
-.buttons-menu button {
+.food__menu_beans button {
   background-color: transparent;
   width: 194px;
   height: 45px;
@@ -785,15 +797,25 @@ aside img {
   letter-spacing: 0.8px;
 }
 
-.selected-button:active {
+.food__btn_active:active {
   background-color: #edc947;
   color: #121211;
 }
 
-.buttons-menu .selected-button:hover {
+.food__menu_beans .food__btn:hover {
   background-color: #edc947;
   color: #121211;
   border: none;
+  cursor: pointer;
+}
+
+.food__menu_beans .food__btn_active {
+  background-color: #edc947;
+  color: #121211;
+  border: none;
+}
+
+.food__btn_active:hover {
   cursor: pointer;
 }
 
@@ -809,7 +831,7 @@ aside img {
   margin-right: 59px;
 }
 
-.wrapper-menu .menu {
+.wrapper-menu .food__menu {
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -817,7 +839,7 @@ aside img {
   margin-left: 21px;
 }
 
-.buttons-menu {
+.food__menu_beans {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,7 +850,8 @@ aside img {
 
 .menu-drinks {
   position: relative;
-  height: 399px;
+  height: 63vh;
+  margin-bottom: 73px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +865,7 @@ aside img {
   margin-top: 30px;
 }
 
-.menu-drinks .structure-drinks {
+.menu-drinks .food-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -859,7 +882,7 @@ aside img {
   margin-left: 12px;
 }
 
-.structure-drinks .drinks-name {
+.food-box .drinks-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,7 +893,7 @@ aside img {
   width: 244px;
 }
 
-.structure-drinks .price {
+.food-box .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,6 +903,10 @@ aside img {
           flex-direction: column;
   width: 41px;
   height: 131px;
+}
+
+.hidden {
+  opacity: 0.1;
 }
 
 .price img {
@@ -931,7 +958,7 @@ aside img {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 42%;
+  right: 36%;
   bottom: 7%;
 }
 
@@ -940,7 +967,7 @@ aside img {
   color: #edc846;
   text-transform: uppercase;
   border: none;
-  background-color: black;
+  background-color: #181a18;
   cursor: pointer;
 }
 
@@ -954,7 +981,6 @@ aside img {
 }
 
 .wrapper-special {
-  height: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +1008,7 @@ aside img {
 }
 
 .wrapper-special p {
+  margin-top: 10px;
   max-width: 828px;
   text-align: center;
   line-height: 1.6;
@@ -990,6 +1017,11 @@ aside img {
 }
 
 .variations-coffee {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.variations-coffee .coffee-beans {
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -997,19 +1029,12 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 187vh;
-  width: 100%;
-}
-
-.variations-coffee .coffee-beans {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
 .coffee-beans div {
-  width: 100%;
-  height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,20 +1052,20 @@ aside img {
   font-size: 34px;
   color: #edc846;
   text-transform: uppercase;
-  padding-top: 97px;
+  padding-top: 93px;
   margin: 0;
   width: 360px;
   letter-spacing: .8px;
   text-align: left;
-  padding-right: 48px;
+  padding-right: 16px;
 }
 
 .coffee-beans p {
-  width: 360px;
-  letter-spacing: 0.8px;
+  width: 363px;
+  letter-spacing: .8px;
   line-height: 1.5;
-  padding-right: 44px;
-  margin: 0px;
+  /* padding-right: 44px; */
+  margin: 0;
   padding-top: 20px;
 }
 
@@ -1052,6 +1077,13 @@ aside img {
 }
 
 .history-about {
+  background-image: url("../img/blackcoffee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.history-about .arabica {
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1059,16 +1091,6 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("../img/blackcoffee.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 60vh;
-}
-
-.history-about .arabica {
-  height: 263px;
-  max-width: 787px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,7 +1099,7 @@ aside img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 95px;
-  padding-left: 5px;
+  padding-bottom: 100px;
 }
 
 .arabica h3 {
@@ -1091,6 +1113,7 @@ aside img {
 }
 
 .arabica p {
+  width: 72%;
   color: #cbbfac;
   margin: 0;
   padding-top: 14px;
@@ -1111,6 +1134,10 @@ aside img {
   margin-top: 25px;
 }
 
+.arabica button:hover {
+  background-color: #eec947;
+}
+
 .arabica h3 span {
   color: #edc846;
 }
@@ -1118,6 +1145,15 @@ aside img {
 .arabica button a {
   text-decoration: none;
   color: #eec947;
+}
+
+.arabica button a:hover {
+  background-color: #eec947;
+  color: #181a18;
+}
+
+.caffee-food {
+  width: 100%;
 }
 
 .breakfast-menu {
@@ -1128,11 +1164,11 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 185vh;
+  margin-bottom: 73px;
 }
 
 .breakfast-menu h3 {
-  height: 75px;
+  padding-bottom: 18px;
   text-transform: uppercase;
   font-family: Economica,sans-serif;
   font-size: 50px;
@@ -1180,7 +1216,7 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 980px;
+  height: 130vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -1189,7 +1225,7 @@ aside img {
 }
 
 .hide {
-  display: none;
+  opacity: 0.3;
 }
 
 .container-box .box-cards {
@@ -1201,6 +1237,7 @@ aside img {
 .container-box .box p {
   background-color: #1c1c1a;
   margin: 0;
+  opacity: 0.7;
   color: #c3c3c3;
   text-align: center;
   font-size: 34px;
@@ -1209,20 +1246,22 @@ aside img {
   bottom: 9%;
   width: 340px;
   letter-spacing: 0.7px;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
 }
 
 .box-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -4px;
 }
 
 .box-button button {
   background-color: #1c1c1a;
   width: 170px;
-  height: 46px;
+  height: 50px;
   border-color: #1c1c1a;
+  padding-bottom: 3px;
 }
 
 .box-button a {
@@ -1244,7 +1283,7 @@ aside img {
 .box-cards img {
   opacity: .9;
   width: 341px;
-  height: 411px;
+  height: 414px;
 }
 
 .box-cards span {
@@ -1261,6 +1300,15 @@ aside img {
   padding-top: 13px;
 }
 
+.box-cards span:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .breakfast-menu .view {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,7 +1316,7 @@ aside img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 8px;
+  padding-top: 48px;
 }
 
 .breakfast-menu .view button {
@@ -1280,7 +1328,18 @@ aside img {
   cursor: pointer;
 }
 
+.swiper-cont {
+  background-image: url("../img/yellowcoffee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .swiper-cont .reviews {
+  position: relative;
+}
+
+.reviews .visitors {
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1288,21 +1347,6 @@ aside img {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("../img/yellowcoffee.jpg");
-  background-repeat: no-repeat;
-  height: 96vh;
-  position: relative;
-}
-
-.swiper-cont .swiper-container-autoheight {
-  height: 97vh;
-}
-
-.swiper-cont .swiper-container-autoheight .swiper-slide {
-  height: 97vh;
-}
-
-.reviews .visitors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1313,6 +1357,7 @@ aside img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 96vh;
 }
 
 .visitors h3 {
@@ -1342,11 +1387,11 @@ aside img {
   font-family: "Economica-Bold", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  margin-top: 15px;
   letter-spacing: 0.6px;
   letter-spacing: 0.6px;
   word-spacing: 0px;
-  margin-bottom: -13px;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .visitors .review-card p {
@@ -1355,22 +1400,24 @@ aside img {
   line-height: 1.9;
   word-spacing: 0.3px;
   letter-spacing: 1.0px;
+  padding-top: 15px;
+  padding-bottom: 23px;
 }
 
 .quotes-left {
   width: 32px;
   height: 24px;
   position: absolute;
-  left: 13%;
-  top: 25%;
+  left: 22%;
+  top: 24%;
 }
 
 .quotes-right {
   width: 30px;
   height: 25px;
   position: absolute;
-  right: 21%;
-  top: 37%;
+  right: 28%;
+  top: 36%;
 }
 
 .review-card {
@@ -1384,11 +1431,13 @@ aside img {
 
 .visitors p {
   letter-spacing: 0.9px;
+  margin: 0;
+  padding-top: 6px;
 }
 
 .swiper-cont .swiper-pagination {
   position: absolute;
-  bottom: 10%;
+  bottom: 9%;
   -webkit-transition: .3s opacity;
   -o-transition: .3s opacity;
   transition: .3s opacity;
@@ -1412,14 +1461,6 @@ aside img {
 }
 
 .about {
-  max-width: 1120px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 73vh;
   margin-top: 80px;
 }
 
@@ -1434,9 +1475,17 @@ aside img {
 }
 
 .about .contacts {
+  max-width: 1120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 102px;
 }
 
 .contacts .adress {
@@ -1526,6 +1575,7 @@ aside img {
 textarea {
   border: none;
   background-color: #e7e7e7;
+  resize: none;
 }
 
 .send input {
@@ -1538,6 +1588,13 @@ textarea {
   cursor: pointer;
 }
 
+.feedback {
+  background-image: url("../img/kafenaitcof1-22.jpg");
+  background-position: bottom;
+  background-size: cover;
+  opacity: 82%;
+}
+
 .subscription {
   max-width: 1120px;
   padding-left: 15px;
@@ -1546,12 +1603,8 @@ textarea {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 62vh;
-  background-image: url("../img/kafenaitcof1-22.jpg");
-  background-position: bottom;
-  background-size: cover;
-  opacity: 82%;
   position: relative;
+  padding-bottom: 104px;
 }
 
 .booking {
@@ -1639,8 +1692,10 @@ textarea {
 }
 
 footer {
-  height: 10vh;
   background-color: #ebbf45;
+}
+
+.design {
   max-width: 1120px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1648,9 +1703,6 @@ footer {
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1661,40 +1713,62 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .design p {
   color: #ffffff;
   font-size: 14px;
   padding-left: 30px;
-  padding-top: 11px;
+  padding-top: 8px;
   letter-spacing: 1.1px;
 }
 
 .social img {
-  margin-right: 14px;
+  margin-right: 9px;
+}
+
+.social a img:hover {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 @media all and (max-width: 780px) {
   .container-box {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 191vh;
+    height: 220vh;
   }
 
-  .services {
-    height: 116vh;
+  .coffee-menu {
+    width: 100%;
+  }
+
+  .services .services-item {
+    margin-bottom: 97px;
+  }
+
+  .wrapper-menu {
+    background-color: transparent;
+    padding-left: 10px;
+  }
+
+  .breakfast-menu .view {
+    display: none;
+  }
+
+  .wrapper-menu .view {
+    right: 10%;
   }
 
   .special {
     padding: 0px;
-  }
-
-  .variations-coffee {
-    height: 165vh;
   }
 
   .items p {
@@ -1707,10 +1781,6 @@ footer {
 
   .btns-container button {
     margin-left: 15px;
-  }
-
-  .breakfast-menu {
-    height: 278vh;
   }
 
   .review-card img {
@@ -1727,47 +1797,20 @@ footer {
             flex-direction: column;
   }
 
-  .contacts .public {
-    width: 100%;
-  }
-
-  .contacts .adress {
-    width: 100%;
-  }
-
   .about {
-    height: 122vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 0px;
-  }
-
-  .wrapper-menu {
-    background-color: transparent;
-  }
-
-  .coffee-beans div {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-cont .reviews {
-    height: 91vh;
   }
 
   .swiper-cont .swiper-pagination {
     position: absolute;
     bottom: 8%;
-  }
-
-  .swiper-cont .swiper-container-autoheight .swiper-slide {
-    height: 93vh;
-  }
-
-  .breakfast-menu .view {
-    display: none;
-  }
-
-  .subscription {
-    height: 69vh;
   }
 
   .arrow-up {
@@ -1776,6 +1819,140 @@ footer {
 }
 
 @media all and (max-width: 430px) {
+  .hamburger-menu {
+    display: contents;
+  }
+
+  .nav-container .nav {
+    display: none;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .hamburger-menu .menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .hamburger-menu .menu__btn > span,
+  .hamburger-menu .menu__btn > span::before,
+  .hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #edc947;
+  }
+
+  .hamburger-menu .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .hamburger-menu .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 46%;
+    height: 27%;
+    margin: 0;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #acadb4;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu__item {
+    display: block;
+    padding: 10px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 54%;
+  }
+
+  .food__menu_beans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .food__menu_beans button {
+    margin-bottom: 8px;
+  }
+
+  .wrapper-menu .food__menu {
+    margin-left: 83px;
+  }
+
+  .menu-drinks .food-box {
+    width: 90%;
+  }
+
+  .header .wrapper {
+    opacity: 0.8;
+  }
+
+  .shopping,
+  .search {
+    display: none;
+  }
+
   .kafenaite-about {
     font-size: 10px;
   }
@@ -1802,14 +1979,6 @@ footer {
     font-size: 16px;
   }
 
-  .slider-wrapper {
-    height: 72vh;
-  }
-
-  .swiper-cont .reviews {
-    height: 76vh;
-  }
-
   .services .services-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1823,23 +1992,7 @@ footer {
   .container-box {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-  }
-
-  .swiper-container-autoheight,
-  .swiper-container-autoheight .swiper-slide {
-    height: 72vh;
-  }
-
-  .swiper-cont .swiper-pagination {
-    bottom: 7%;
-  }
-
-  .swiper-cont .swiper-container-autoheight .swiper-slide {
-    height: 75vh;
-  }
-
-  .swiper-cont .swiper-container-autoheight {
-    height: 76vh;
+    height: 437vh;
   }
 
   .wrapper-menu {
@@ -1850,11 +2003,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 165vh;
-  }
-
-  .wrapper-special {
-    height: 40vh;
+    height: 172vh;
+    padding-left: 0;
   }
 
   .wrapper-special h3 {
@@ -1863,6 +2013,8 @@ footer {
 
   .wrapper-special p {
     font-size: 17px;
+    text-align: left;
+    padding-left: 32px;
   }
 
   .wrapper-menu .menu {
@@ -1885,18 +2037,16 @@ footer {
 
   .buttons-menu button {
     width: 100%;
+    margin-right: 15px;
   }
 
   .services-item .items {
     width: 100%;
   }
 
-  .services {
-    height: 100%;
-  }
-
-  .variations-coffee {
-    height: 98vh;
+  .intro p {
+    text-align: left;
+    padding-left: 48px;
   }
 
   .menu-drinks .structure-drinks {
@@ -1905,13 +2055,12 @@ footer {
     margin-left: 12px;
   }
 
-  .coffee-menu .view {
-    display: none;
+  .menu-drinks .box {
+    width: 93%;
   }
 
-  .wrapper {
-    opacity: 0.6;
-    height: 92%;
+  .coffee-menu .view {
+    display: none;
   }
 
   .logo img {
@@ -1919,40 +2068,6 @@ footer {
     position: absolute;
     top: 0px;
     left: 8px;
-  }
-
-  .wrapper .nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 0px;
-  }
-
-  .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 16px;
-  }
-
-  .nav-container .search {
-    position: absolute;
-    top: 100%;
-    right: 7%;
-  }
-
-  .nav-container .shopping {
-    position: absolute;
-    top: 100%;
-    right: 15%;
   }
 
   .items img {
@@ -2007,10 +2122,6 @@ footer {
     text-align: left;
   }
 
-  .history-about {
-    height: 85vh;
-  }
-
   .btns-container {
     margin-top: 45px;
   }
@@ -2027,12 +2138,16 @@ footer {
     margin-left: 15px;
   }
 
-  .breakfast-menu {
-    height: 507vh;
-  }
-
   .breakfast-menu .view {
     display: none;
+  }
+
+  .contacts .adress {
+    width: 100%;
+  }
+
+  .about .public {
+    width: 100%;
   }
 
   .visitors h3 {
@@ -2070,10 +2185,6 @@ footer {
     width: 100%;
   }
 
-  .about {
-    height: 137vh;
-  }
-
   .about h3 {
     font-size: 34px;
   }
@@ -2084,10 +2195,6 @@ footer {
 
   .booking p {
     font-size: 16px;
-  }
-
-  .subscription {
-    height: 55vh;
   }
 
   .booking input {
@@ -2107,19 +2214,40 @@ footer {
   .social {
     width: 40%;
   }
-
-  footer {
-    height: 6vh;
-  }
 }
 
 @media all and (max-width: 320px) {
   .preview {
-    height: 75vh;
+    height: 58vh;
+  }
+
+  .hamburger-menu .menu__btn {
+    right: 25%;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    left: 36%;
+  }
+
+  .menu__box {
+    padding: 19px 0;
+    height: 24%;
+  }
+
+  .services .services-item {
+    margin: 0;
   }
 
   .slider-wrapper {
     height: 47vh;
+  }
+
+  .wrapper-menu {
+    height: 158vh;
+  }
+
+  .wrapper-menu .food__menu {
+    margin-left: 49px;
   }
 
   .button-order {
@@ -2127,21 +2255,51 @@ footer {
     margin-top: 35px;
   }
 
+  .kafeinate .kafenaite-about {
+    margin-bottom: 124px;
+  }
+
   .kafenaite-about h2 {
     width: 20%;
   }
 
   .kafeinate {
+    height: 49vh;
     padding-top: 70px;
+  }
+
+  .intro p {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+
+  .btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 27px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .history-about {
+    margin-left: 20px;
   }
 
   .image-slider .swiper-pagination {
     bottom: 39%;
   }
 
-  .swiper-container-autoheight,
-  .swiper-container-autoheight .swiper-slide {
-    height: 47vh;
+  .menu-drinks .box {
+    width: 94%;
+  }
+
+  .reviews .visitors {
+    height: 78vh;
   }
 
   .image-slider .swiper-pagination {
@@ -2153,16 +2311,8 @@ footer {
     padding-top: 0;
   }
 
-  .intro {
-    height: 37vh;
-  }
-
   .items p {
     font-size: 16px;
-  }
-
-  .services-item .items {
-    height: 19vh;
   }
 
   .wrapper-menu .menu {
@@ -2184,10 +2334,6 @@ footer {
     margin-left: 8px;
   }
 
-  .wrapper-menu {
-    height: 150vh;
-  }
-
   .coffee-beans div {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -2199,10 +2345,6 @@ footer {
     width: 76%;
   }
 
-  .variations-coffee {
-    height: 110vh;
-  }
-
   .arabica h3 {
     font-size: 34px;
   }
@@ -2210,13 +2352,6 @@ footer {
   .history-about .arabica {
     padding-top: 0;
     padding-left: 0;
-    height: 76vh;
-  }
-
-  .btns-container {
-    margin-top: 65px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .breakfast-menu {
@@ -2239,10 +2374,6 @@ footer {
 
   .swiper-cont .swiper-pagination {
     bottom: 2%;
-  }
-
-  .subscription {
-    height: 60vh;
   }
 
   .social img {
@@ -2275,5 +2406,9 @@ footer {
 
   .arrow-up {
     bottom: 16%;
+  }
+
+  .about .contacts {
+    margin-bottom: 10px;
   }
 }

@@ -39,6 +39,19 @@
                         <img src="./img/loupe.png" alt="icon loupe">
                     </a>
                 </div>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__box">
+                      <li><a class="menu__item" href="#">home</a></li>
+                      <li><a class="menu__item" href="#">menu</a></li>
+                      <li><a class="menu__item" href="#">about us</a></li>
+                      <li><a class="menu__item" href="#">shop</a></li>
+                      <li><a class="menu__item" href="#">contact</a></li>
+                    </ul>
+                  </div>
             </div>
         </header>
         <div class="slider-wrapper">
@@ -132,107 +145,226 @@
 
     <!-- section3_______ -->
 
-    <section class="wrapper-menu">
-        <div class="coffee-menu">
-            <h3>menu</h3>
-            <div class="menu">
-                <div class="buttons-menu">
-                    <button class="selected-button" type="button">Coffee Beans</button>
-                    <button class="selected-button" type="button">Drinks</button>
-                    <button class="selected-button" type="button">Breakfast</button>
+    <section class="wrapper">
+        <div class="wrapper-menu">
+            <div class="coffee-menu">
+                <h3>menu</h3>
+                <div class="food__menu">
+                    <div class="food__menu_beans">
+                        <button id="Coffee-Beans" class="food__btn">Coffee Beans</button>
+                        <button class="food__btn_active" id="drinks">Drinks</button>
+                        <button id="Breakfast" class="food__btn">Breakfast</button>
+                    </div>
+                </div>
+                <div class="menu-drinks">
+
+                    <div class="food-box" data-food="drinks">
+                        <div class="drinks-name">
+                            <h4>1/Cappuchino</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>60</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="food-box hidden" data-food="Coffee-Beans">
+                        <div class="drinks-name">
+                            <h4>2/Fappuchino</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$6.0</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>80</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="food-box hidden" data-food="Coffee-Beans">
+                        <div class="drinks-name">
+                            <h4>3/Expresso</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$4.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="food-box hidden" data-food="Breakfast">
+                        <div class="drinks-name">
+                            <h4>4/Mocha</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.0</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>45</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="food-box hidden" data-food="Breakfast">
+                        <div class="drinks-name">
+                            <h4>5/Cafe Latte</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>32</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="food-box hidden" data-food="Breakfast">
+                        <div class="drinks-name">
+                            <h4>6/Machiato</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$6.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>78</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="view">
+                    <button>view all</button>
+                    <div>
+                        <img src="./img/arrow.png" alt="arrow">
+                    </div>
                 </div>
             </div>
-            <div class="menu-drinks">
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>1/Cappuchino</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$5.5</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>60</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>2/Fappuchino</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$6.0</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>80</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>3/Expresso</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$4.5</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>55</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>4/Mocha</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$5.0</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>45</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>5/Cafe Latte</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$5.5</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>32</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-drinks">
-                    <div class="drinks-name">
-                        <h4>6/Machiato</h4>
-                        <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
-                    </div>
-                    <div class="price">
-                        <p class="doll">$6.5</p>
-                        <div class="likes">
-                            <img src="./img/heart.png" alt="icon heart">
-                            <p>78</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="view">
-                <button>view all</button>
-                <div>
-                    <img src="./img/arrow.png" alt="arrow">
-                </div>
-            </div>
+            <aside>
+                <img src="./img/blackcup.png" alt="cup">
+            </aside>
         </div>
-        <aside>
-            <img src="./img/blackcup.png" alt="cup">
-        </aside>
     </section>
+
+
+    <!-- <section class="wrapper">
+        <div class="wrapper-menu">
+            <div class="coffee-menu">
+                <h3>menu</h3>
+                <div class="menu">
+                    <div class="buttons-menu">
+                        <button class="selected-button" type="button">Coffee Beans</button>
+                        <button class="selected-button" type="button">Drinks</button>
+                        <button class="selected-button" type="button">Breakfast</button>
+                    </div>
+                </div>
+                <div class="menu-drinks">
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>1/Cappuchino</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>2/Fappuchino</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$6.0</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>80</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>3/Expresso</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$4.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>4/Mocha</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.0</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>45</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>5/Cafe Latte</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$5.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>32</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-drinks">
+                        <div class="drinks-name">
+                            <h4>6/Machiato</h4>
+                            <p>Lorem ipsum Culpain autea dolor minim irure pariaturaa</p>
+                        </div>
+                        <div class="price">
+                            <p class="doll">$6.5</p>
+                            <div class="likes">
+                                <img src="./img/heart.png" alt="icon heart">
+                                <p>78</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view">
+                    <button>view all</button>
+                    <div>
+                        <img src="./img/arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <img src="./img/blackcup.png" alt="cup">
+            </aside>
+        </div>
+    </section> -->
 
 
     <!-- section4____ -->
@@ -300,7 +432,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumen asperiores,
                 saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate
                 beatae optio eos. Assumen asperiores, saepe alias dignissimos.</p>
-            <button>
+            <button type="button">
                 <a href="#">Know More</a>
             </button>
         </div>
@@ -309,90 +441,92 @@
 
     <!-- section7______ -->
 
-    <section class="breakfast-menu">
-        <h3>our favorite products</h3>
-        <div class="container btns-container">
-            <button id="Coffee Bean">Coffee Bean</button>
-            <button id="Breakfast">Breakfast</button>
-            <button class="active" id="Coffee & Drink">Coffee & Drink</button>
-            <button id="Coffee Package">Coffee Package</button>
-        </div>
-        <div class="container-box">
-            <div class="box-cards">
-                <div class="box Coffee Bean" data-box="Coffee Bean">
-                    <img src="./img/machiato1.jpg" alt="a cup of coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                        <button>
-                            <a href="#">Order</a>
-                        </button>
+    <section class="caffee-food">
+        <div class="breakfast-menu">
+            <h3>our favorite products</h3>
+            <div class="container btns-container">
+                <button id="Coffee Bean">Coffee Bean</button>
+                <button id="Breakfast">Breakfast</button>
+                <button class="active" id="Coffee & Drink">Coffee & Drink</button>
+                <button id="Coffee Package">Coffee Package</button>
+            </div>
+            <div class="container-box">
+                <div class="box-cards">
+                    <div class="box Coffee Bean" data-box="Coffee Bean">
+                        <img src="./img/machiato1.jpg" alt="a cup of coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button>
+                                <a href="#">Add to card</a>
+                            </button>
+                            <button>
+                                <a href="#">Order</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="box Breakfast" data-box="Breakfast">
+                        <img src="./img/machiato2.jpg" alt="a cup of coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button><a href="#">Add to card</a></button>
+                            <button><a href="#">Order</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="box Coffee Bean" data-box="Coffee Bean">
+                        <img src="./img/machiato3.jpg" alt="coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button><a href="#">Add to card</a></button>
+                            <button><a href="#">Order</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="box Breakfast" data-box="Breakfast">
+                        <img src="./img/machiato45.jpg" alt="a cup of coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button><a href="#">Add to card</a></button>
+                            <button><a href="#">Order</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="box Breakfast" data-box="Breakfast">
+                        <img src="./img/machiato5.jpg" alt="a cup of coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button><a href="#">Add to card</a></button>
+                            <button><a href="#">Order</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="box Coffee Package" data-box="Coffee Package">
+                        <img src="./img/machiato6.jpg" alt="brewing coffee">
+                        <p>Maschiato Coffee</p>
+                        <span>$5</span>
+                        <div class="box-button">
+                            <button><a href="#">Add to card</a></button>
+                            <button><a href="#">Order</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box-cards">
-                <div class="box Breakfast" data-box="Breakfast">
-                    <img src="./img/machiato2.jpg" alt="a cup of coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button><a href="#">Add to card</a></button>
-                        <button><a href="#">Order</a></button>
-                    </div>
+            <div class="view">
+                <button type="button">view all</button>
+                <div>
+                    <img src="./img/arrow22.jpg" alt="arrow">
                 </div>
-            </div>
-            <div class="box-cards">
-                <div class="box Coffee Bean" data-box="Coffee Bean">
-                    <img src="./img/machiato3.jpg" alt="coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button><a href="#">Add to card</a></button>
-                        <button><a href="#">Order</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="box-cards">
-                <div class="box Breakfast" data-box="Breakfast">
-                    <img src="./img/machiato45.jpg" alt="a cup of coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button><a href="#">Add to card</a></button>
-                        <button><a href="#">Order</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="box-cards">
-                <div class="box Breakfast" data-box="Breakfast">
-                    <img src="./img/machiato5.jpg" alt="a cup of coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button><a href="#">Add to card</a></button>
-                        <button><a href="#">Order</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="box-cards">
-                <div class="box Coffee Package" data-box="Coffee Package">
-                    <img src="./img/machiato6.jpg" alt="brewing coffee">
-                    <p>Maschiato Coffee</p>
-                    <span>$5</span>
-                    <div class="box-button">
-                        <button><a href="#">Add to card</a></button>
-                        <button><a href="#">Order</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="view">
-            <button type="button">view all</button>
-            <div>
-                <img src="./img/arrow22.jpg" alt="arrow">
             </div>
         </div>
     </section>
@@ -469,25 +603,26 @@
         <div class="contacts">
             <div class="adress">
                 <div class="adress-line">
-                    <a href="#">
+                    <a target="_blank"
+                        href="https://www.google.com/maps/search/198+West+21th+Street,+Suite+721+New+York/@40.7395542,-73.947497,12z/data=!3m1!4b1">
                         <img src="./img/nav.png" alt="logo navigation">
                     </a>
                     <p>198 West 21th Street, Suite 721 New York </p>
                 </div>
                 <div class="adress-line">
-                    <a href="#">
+                    <a href="tel:+(84)123456789">
                         <img src="./img/tel.png" alt="logo phone">
                     </a>
                     <p>+(84)123456789</p>
                 </div>
                 <div class="adress-line">
-                    <a href="#">
+                    <a href="mailto:cafeinate@cofeee.org">
                         <img src="./img/mail.png" alt="logo mail">
                     </a>
                     <p>cafeinate@cofeee.org</p>
                 </div>
                 <div class="adress-line">
-                    <a href="#">
+                    <a href="mailto:cafeinate@cofeee.org">
                         <img src="./img/network.png" alt="logo interntet">
                     </a>
                     <p>cafeinate@cofeee.org</p>
@@ -522,27 +657,29 @@
 
     <!-- section10_____ -->
 
-    <section class="subscription">
-        <div class="booking">
-            <button class="little-logo">
-                <img src="./img/logosmall.png" alt="coffee logotype">
-            </button>
-            <p>Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendrerit
-                nisl. In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.</p>
-            <div class="subscribe-mail">
-                <input type="email" name="email" placeholder="SUBSCRIBE | Your email" &#8594>
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-default">
-                        <span>→</span>
-                    </button>
-                </span>
+    <section class="feedback">
+        <div class="subscription">
+            <div class="booking">
+                <button class="little-logo">
+                    <img src="./img/logosmall.png" alt="coffee logotype">
+                </button>
+                <p>Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendrerit
+                    nisl. In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.</p>
+                <div class="subscribe-mail">
+                    <input type="email" name="email" placeholder="SUBSCRIBE | Your email" &#8594>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                            <span>→</span>
+                        </button>
+                    </span>
+                </div>
             </div>
+            <button class="arrow-up">
+                <a class="scroll-down" href="./index.html">
+                    <img src="./img/arrowup.png" alt="arrow">
+                </a>
+            </button>
         </div>
-        <button class="arrow-up">            
-            <a class="scroll-down" href="./index.html">
-                <img src="./img/arrowup.png" alt="arrow">
-            </a>
-        </button>
     </section>
 
 

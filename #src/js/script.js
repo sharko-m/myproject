@@ -78,27 +78,27 @@ function removeClass(btnsArr, className) {
 
 
 
-let btnsContainer = document.querySelector('.buttons-menu')
+let btnsFood = document.querySelector('.food__menu')
 
-btnsContainer.addEventListener('click', function(e) {
+btnsFood.addEventListener('click', function(e) {
 	if (!e.target.closest("button")) return;
 	let btn = e.target.closest("button");
-	if (btn.classList.contains('active')) return;
+	if (btn.classList.contains('food__btn_active')) return;
 
     let btns = Array.from(this.querySelectorAll('button'));
 
-    removeClass(btns, 'active');
-    btn.classList.add('active');
+    removeClass(btns, 'food__btn_active');
+    btn.classList.add('food__btn_active');
 
     let btnId = btn.id;
     
-    let boxs = Array.from(document.querySelectorAll('.box'));
-    removeClass(boxs, 'hide');
-    if (btnId === 'Drinks') return;
+    let boxs = Array.from(document.querySelectorAll('.food-box'));
+    removeClass(boxs, 'hidden');
+    if (btnId === 'drinks') return;
 
     boxs 
-        .filter(box => box.dataset.box !== btnId)
-        .map(box => box.classList.add('hide'));
+        .filter(box => box.dataset.food !== btnId)
+        .map(box => box.classList.add('hidden'));
         
 });
 
