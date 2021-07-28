@@ -943,6 +943,10 @@ aside img {
 .adress-line a {
     margin-bottom: 18px;
 }
+.adress-line a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
 .about .public {
     display: flex;
     flex-direction: column;
