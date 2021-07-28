@@ -806,7 +806,7 @@ aside img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 96vh;    
+    // height: 96vh;    
     
 }
 .visitors h3 {
@@ -874,6 +874,7 @@ aside img {
     letter-spacing: 0.9px;
     margin: 0;
     padding-top: 6px;
+    margin-bottom: 95px;
 }
 .swiper-cont .swiper-pagination {
     position: absolute;    
@@ -1158,6 +1159,9 @@ textarea {
 
     
     @media all and (max-width: 430px) {
+        .preview {
+            height: 73vh;
+        }
         .hamburger-menu {
             display: contents;
         }
@@ -1203,9 +1207,9 @@ textarea {
         top: 0;
         // left: -100%;
         width: 46%;
-        height: 27%;
+        height: 25%;
         margin: 0;
-        padding: 70px 0;
+        padding: 39px 0;
         list-style: none;
         text-align: center;
         background-color: #acadb4;
@@ -1251,12 +1255,26 @@ textarea {
       .menu-drinks .food-box {
           width: 90%;
       }
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+}
+        .menu__box {
+            transition-duration: .25s;
+}
+        .menu__item {
+             transition-duration: .25s;
+}
     
        .header .wrapper {
            opacity: 0.8;
        }
        .shopping, .search {
            display: none;
+       }
+       .kafeinate {
+           height: 60vh;
        }
 
         .kafenaite-about {
@@ -1387,7 +1405,13 @@ textarea {
         
         .btns-container {
             margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 27px;   
+            margin-left: 0;
+            margin-right: 0;  
         }
+        
         .breakfast-menu h3 {
             font-size: 33px;
             padding-top: 45px;
@@ -1395,7 +1419,7 @@ textarea {
         }
         .btns-container button {
             font-size: 12px;
-            width: 100%;
+            width: 85%;
             margin-left: 15px;
         }
         
@@ -1411,6 +1435,9 @@ textarea {
         .visitors h3 {
             margin-top: 0px;
             font-size: 34px;
+        }
+        .visitors p {
+            margin-bottom: 70px;
         }
         .visitors .review-card p {
             font-size: 16px;
@@ -1460,9 +1487,9 @@ textarea {
         
     }
 
-    @media all and (max-width: 320px) {
+    @media all and (max-width: 321px) {
         .preview {
-            height: 58vh;
+            height: 76vh;
         }
         .hamburger-menu .menu__btn {            
             right: 25%;      
@@ -1471,6 +1498,7 @@ textarea {
         #menu__toggle:checked~.menu__box {
             left: 36%;
         }
+        
         .menu__box {
             padding: 19px 0;
             height: 24%;
@@ -1479,7 +1507,7 @@ textarea {
             margin: 0;
         }
         .slider-wrapper {
-            height: 47vh;
+            height: 75vh;
         }
         .wrapper-menu {
             height: 158vh;
@@ -1498,7 +1526,7 @@ textarea {
             width: 20%;
         }
         .kafeinate {
-            height: 49vh;
+            height: 62vh;
             padding-top: 70px;
         }
         .intro p {
@@ -1522,7 +1550,7 @@ textarea {
             width: 94%;
         }
         .reviews .visitors {
-            height: 78vh;
+            // height: 78vh;
         }
         
         .image-slider .swiper-pagination {
@@ -1583,6 +1611,7 @@ textarea {
         .container-box {
             padding-left: 0;
             padding-right: 0;
+            height: 423vh;
         }
         .swiper-cont .swiper-pagination {
             bottom: 2%;
