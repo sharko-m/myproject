@@ -675,13 +675,14 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    height: 130vh;  
+    // height: 130vh;  
     // height: 233vh;  
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 25px;    
     margin: 0;
+    padding-bottom: 18px;
 }
 
 .hide {
@@ -1108,7 +1109,7 @@ textarea {
     .container-box {      
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);  
-        height: 220vh;      
+        // height: 220vh;      
     }
     .coffee-menu {
         width: 100%;
@@ -1163,11 +1164,15 @@ textarea {
 
     
     @media all and (max-width: 430px) {
-        .preview {
-            height: 73vh;
+        // .preview {
+        //     height: 73vh;
+        // }
+        .header .wrapper {
+            position: relative;
         }
         .hamburger-menu {
             display: contents;
+            position: relative;
         }
         .nav-container .nav {
             display: none;
@@ -1179,8 +1184,8 @@ textarea {
     .hamburger-menu .menu__btn {
             display: flex; 
             align-items: flex-end; 
-            position: fixed;
-            top: 20px;
+            position: absolute;                       
+            top: 10px;
             right: 20px;
             width: 26px;
             height: 26px;
@@ -1211,9 +1216,9 @@ textarea {
         top: 0;
         // left: -100%;
         width: 46%;
-        height: 25%;
+        height: 30%;
         margin: 0;
-        padding: 39px 0;
+        padding: 50px 0 15px 0;
         list-style: none;
         text-align: center;
         background-color: #acadb4;
@@ -1221,7 +1226,7 @@ textarea {
       }
       .menu__item {
         display: block;
-        padding: 10px 24px;
+        padding: 6px 24px;
         color: #333;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
@@ -1259,17 +1264,7 @@ textarea {
       .menu-drinks .food-box {
           width: 90%;
       }
-      .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        transition-duration: .25s;
-}
-        .menu__box {
-            transition-duration: .25s;
-}
-        .menu__item {
-             transition-duration: .25s;
-}
+
     
        .header .wrapper {
            opacity: 0.8;
@@ -1278,7 +1273,7 @@ textarea {
            display: none;
        }
        .kafeinate {
-           height: 60vh;
+           height: 67vh;
        }
 
         .kafenaite-about {
@@ -1309,7 +1304,10 @@ textarea {
         .container-box {             
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(6,1fr); 
-            height: 437vh;       
+            // height: 437vh;       
+        }
+        .wrapper {
+            padding-bottom: 90px;
         }
         
         .wrapper-menu {
@@ -1425,6 +1423,7 @@ textarea {
             font-size: 12px;
             width: 85%;
             margin-left: 15px;
+            margin-bottom: 8px;
         }
         
         .breakfast-menu .view {
@@ -1496,7 +1495,7 @@ textarea {
             height: 76vh;
         }
         .hamburger-menu .menu__btn {            
-            right: 25%;      
+            right: 9%;      
             
         }
         #menu__toggle:checked~.menu__box {
@@ -1530,7 +1529,7 @@ textarea {
             width: 20%;
         }
         .kafeinate {
-            height: 62vh;
+            height: 52vh;
             padding-top: 70px;
         }
         .intro p {
@@ -1595,6 +1594,13 @@ textarea {
         
         .arabica h3 {
             font-size: 34px;
+            text-align: center;
+        }
+        .arabica button {
+            margin-left: 42px;
+        }
+        .arabica p {
+            padding-left: 14px;
         }
         .history-about .arabica {
             padding-top: 0;
@@ -1615,7 +1621,7 @@ textarea {
         .container-box {
             padding-left: 0;
             padding-right: 0;
-            height: 423vh;
+            // height: 423vh;
         }
         .swiper-cont .swiper-pagination {
             bottom: 2%;
