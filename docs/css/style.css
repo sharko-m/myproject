@@ -2243,6 +2243,18 @@ footer {
   .social {
     width: 40%;
   }
+
+  .box-cards img {
+    width: 100%;
+  }
+
+  .container-box .box p {
+    width: 100%;
+  }
+
+  .box-button button {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 321px) {
@@ -2255,7 +2267,7 @@ footer {
   }
 
   #menu__toggle:checked ~ .menu__box {
-    left: 44%;
+    left: 54%;
   }
 
   .menu__box {
@@ -2293,7 +2305,8 @@ footer {
   }
 
   .kafeinate {
-    padding-top: 70px;
+    height: auto;
+    padding-top: 117px;
   }
 
   .intro p {
