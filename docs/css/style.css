@@ -1853,7 +1853,7 @@ footer {
             align-items: flex-end;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 50px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -2205,6 +2205,7 @@ footer {
   .name-mail input {
     width: 100%;
     margin-bottom: 18px;
+    margin-right: 0;
   }
 
   .teamwork select {
@@ -2261,11 +2262,11 @@ footer {
   }
 
   #menu__toggle:checked ~ .menu__box {
-    left: 36%;
+    left: 44%;
   }
 
   .menu__box {
-    padding: 19px 0;
+    padding: 40px 0;
     height: 24%;
   }
 
@@ -2277,8 +2278,8 @@ footer {
     height: 75vh;
   }
 
-  .wrapper-menu {
-    height: 158vh;
+  .wrapper {
+    padding-bottom: 0;
   }
 
   .wrapper-menu .food__menu {
@@ -2299,7 +2300,6 @@ footer {
   }
 
   .kafeinate {
-    height: 52vh;
     padding-top: 70px;
   }
 
@@ -2319,10 +2319,6 @@ footer {
     margin-top: 27px;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .history-about {
-    margin-left: 20px;
   }
 
   .image-slider .swiper-pagination {
@@ -2365,6 +2361,10 @@ footer {
     margin-left: 8px;
   }
 
+  .wrapper-special p {
+    padding-left: 15px;
+  }
+
   .coffee-beans div {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -2373,12 +2373,16 @@ footer {
 
   .coffee-beans p {
     padding-right: 0;
-    width: 76%;
+    width: 90%;
+  }
+
+  .coffee-beans h4 {
+    width: 100%;
+    padding: 0;
   }
 
   .arabica h3 {
     font-size: 34px;
-    text-align: center;
   }
 
   .arabica button {
@@ -2400,7 +2404,7 @@ footer {
   }
 
   .box-cards img {
-    width: 100%;
+    width: 320px;
   }
 
   .container-box .box p {

@@ -1045,7 +1045,7 @@ textarea {
 .booking input {
     margin-top: 6px;
     width: 560px;
-    // width: 90%;
+    
     height: 32px;
     background-color: #090909;
     color: #ffffff;
@@ -1109,7 +1109,7 @@ textarea {
     .container-box {      
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);  
-        // height: 220vh;      
+          
     }
     .coffee-menu {
         width: 100%;
@@ -1164,9 +1164,7 @@ textarea {
 
     
     @media all and (max-width: 430px) {
-        // .preview {
-        //     height: 73vh;
-        // }
+        
         .header .wrapper {
             position: relative;
         }
@@ -1186,7 +1184,7 @@ textarea {
             align-items: flex-end; 
             position: absolute;                       
             top: 10px;
-            right: 20px;
+            right: 50px;
             width: 26px;
             height: 26px;
             cursor: pointer;
@@ -1452,6 +1450,7 @@ textarea {
         .name-mail input {
             width: 100%;
             margin-bottom: 18px;
+            margin-right: 0;
         }
         .teamwork select {
             width: 100%;
@@ -1499,11 +1498,11 @@ textarea {
             
         }
         #menu__toggle:checked~.menu__box {
-            left: 36%;
+            left: 44%;
         }
         
         .menu__box {
-            padding: 19px 0;
+            padding: 40px 0;
             height: 24%;
         }
         .services .services-item {
@@ -1512,8 +1511,8 @@ textarea {
         .slider-wrapper {
             height: 75vh;
         }
-        .wrapper-menu {
-            height: 158vh;
+        .wrapper {
+            padding-bottom: 0;
         }
         .wrapper-menu .food__menu {
             margin-left: 49px;
@@ -1529,7 +1528,7 @@ textarea {
             width: 20%;
         }
         .kafeinate {
-            height: 52vh;
+            // height: 52vh;
             padding-top: 70px;
         }
         .intro p {
@@ -1543,18 +1542,14 @@ textarea {
             margin-left: 0;
             margin-right: 0;         
         }
-        .history-about {
-            margin-left: 20px;
-        }
+        
         .image-slider .swiper-pagination {
             bottom: 39%;
         }
         .menu-drinks .box {
             width: 94%;
         }
-        .reviews .visitors {
-            // height: 78vh;
-        }
+       
         
         .image-slider .swiper-pagination {
             bottom: 12%;
@@ -1583,18 +1578,25 @@ textarea {
             height: 43px;
             margin-left: 8px;
         }
+        .wrapper-special p {
+            padding-left: 15px;
+        }
         
         .coffee-beans div {
             align-items: flex-start;
         }
         .coffee-beans p {
             padding-right: 0;
-            width: 76%;
+            width: 90%;
+        }
+        .coffee-beans h4 {
+            width: 100%;
+            padding: 0;
         }
         
         .arabica h3 {
             font-size: 34px;
-            text-align: center;
+            
         }
         .arabica button {
             margin-left: 42px;
@@ -1604,8 +1606,7 @@ textarea {
         }
         .history-about .arabica {
             padding-top: 0;
-            padding-left: 0;
-            // height: 76vh;
+            padding-left: 0;            
         }
         
         .breakfast-menu {
@@ -1613,7 +1614,7 @@ textarea {
             padding-right: 0;
         }
         .box-cards img {
-            width: 100%;
+            width: 320px;
         }
         .container-box .box p {
             width: 100%;
