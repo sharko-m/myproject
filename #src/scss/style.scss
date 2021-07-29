@@ -1270,10 +1270,7 @@ textarea {
        .shopping, .search {
            display: none;
        }
-       .kafeinate {
-           height: 67vh;
-       }
-
+       
         .kafenaite-about {
             font-size: 10px;
         }
@@ -1304,14 +1301,11 @@ textarea {
             grid-template-rows: repeat(6,1fr); 
             // height: 437vh;       
         }
-        .wrapper {
-            padding-bottom: 90px;
-        }
+        
         
         .wrapper-menu {
             display: flex;
-            flex-direction: column;
-            height: 172vh;
+            flex-direction: column;            
             padding-left: 0;
         }
         
@@ -1330,6 +1324,8 @@ textarea {
         }
         .menu-drinks {
             flex-wrap: inherit;
+            height: auto;
+            margin-bottom: 0;
         }
         .buttons-menu button {
             width: 100%;
@@ -1617,7 +1613,7 @@ textarea {
             width: 320px;
         }
         .container-box .box p {
-            width: 100%;
+            width: 319px;
         }
         .container-box {
             padding-left: 0;
@@ -1642,6 +1638,9 @@ textarea {
          }
          .about .contacts {
              margin-bottom: 10px;
+         }
+         .box-button button {
+             width: 160px;
          }
 
     }

@@ -1966,10 +1966,6 @@ footer {
     display: none;
   }
 
-  .kafeinate {
-    height: 67vh;
-  }
-
   .kafenaite-about {
     font-size: 10px;
   }
@@ -2011,10 +2007,6 @@ footer {
     grid-template-rows: repeat(6, 1fr);
   }
 
-  .wrapper {
-    padding-bottom: 90px;
-  }
-
   .wrapper-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2023,7 +2015,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 172vh;
     padding-left: 0;
   }
 
@@ -2053,6 +2044,8 @@ footer {
   .menu-drinks {
     -ms-flex-wrap: inherit;
         flex-wrap: inherit;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .buttons-menu button {
@@ -2408,7 +2401,7 @@ footer {
   }
 
   .container-box .box p {
-    width: 100%;
+    width: 319px;
   }
 
   .container-box {
@@ -2454,5 +2447,9 @@ footer {
 
   .about .contacts {
     margin-bottom: 10px;
+  }
+
+  .box-button button {
+    width: 160px;
   }
 }
