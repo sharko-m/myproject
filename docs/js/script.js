@@ -36,10 +36,10 @@ let swiper = new Swiper('.mySwiper', {
     },
     autoHeight: true,
     loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false
+    // },
         speed: 1000,
     
 });
@@ -107,3 +107,32 @@ function removeClass(btnsArr, className) {
         .filter(item => item.classList.contains(className))
         .map(item => item.classList.remove(className));
 }
+
+// function Food() {
+//     let bindAll = function() {
+//       let menuElements = document.querySelectorAll('[data-food]');
+//       for(let i = 0; i < menuElements.length ; i++) {
+//         menuElements[i].addEventListener('click', change, false);
+//       }
+//     }
+  
+//     let clear = function() {
+//       let menuElements = document.querySelectorAll('[data-food]');
+//       for(let i = 0; i < menuElements.length ; i++) {
+//         menuElements[i].classList.remove('food__btn_active');
+//         let id = menuElements[i].getAttribute('data-food');
+//         document.getElementById(id).classList.remove('food__btn_active');
+//       }
+//     }
+  
+//     let change = function(e) {
+//       clear();
+//       e.target.classList.add('food__btn_active');
+//       let id = e.currentTarget.getAttribute('data-food');
+//       document.getElementById(id).classList.add('food__btn_active');
+//     }
+  
+//     bindAll();
+//   }
+  
+//   let connectTabs = new Food();
