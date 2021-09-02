@@ -36,10 +36,10 @@ let swiper = new Swiper('.mySwiper', {
     },
     autoHeight: true,
     loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
         speed: 1000,
     
 });
