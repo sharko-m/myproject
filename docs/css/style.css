@@ -2259,7 +2259,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 97%;
   }
 
   .name-mail input {
@@ -2279,7 +2279,7 @@ footer {
 
   .message-area,
   textarea {
-    width: 100%;
+    width: 99%;
   }
 
   .send input {
