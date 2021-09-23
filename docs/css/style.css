@@ -749,14 +749,14 @@ nav a {
   background-position: left;
 }
 
-.wrapper-menu {
+.wrapper .wrapper-menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 223px;
+  padding-left: 110px;
 }
 
 .coffee-menu {
@@ -773,7 +773,7 @@ aside {
   background-image: url(../img/yellowcup.png);
   background-repeat: no-repeat;
   background-color: #edc947;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 aside img {
@@ -1764,6 +1764,36 @@ footer {
   transition: 0.7s;
 }
 
+@media all and (max-width: 1100px) {
+  aside {
+    display: none;
+  }
+
+  .coffee-menu {
+    width: 100%;
+  }
+
+  .wrapper-menu .food__menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+  }
+
+  .food__menu_beans button {
+    margin-left: 28px;
+  }
+
+  .wrapper-menu .view {
+    right: 8%;
+    bottom: 9%;
+  }
+
+  .btns-container button {
+    margin-left: 20px;
+  }
+}
+
 @media all and (max-width: 780px) {
   .container-box {
     grid-template-columns: repeat(2, 1fr);
@@ -1778,7 +1808,7 @@ footer {
     margin-bottom: 97px;
   }
 
-  .wrapper-menu {
+  .wrapper .wrapper-menu {
     background-color: transparent;
     padding-left: 10px;
   }
@@ -1979,6 +2009,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin-left: 20px;
   }
 
   .food__menu_beans button {
@@ -1996,6 +2027,7 @@ footer {
 
   .menu-drinks .food-box {
     width: 90%;
+    margin-right: 0;
   }
 
   .header .wrapper {
@@ -2053,7 +2085,7 @@ footer {
     grid-template-rows: repeat(6, 1fr);
   }
 
-  .wrapper-menu {
+  .wrapper .wrapper-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2186,6 +2218,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: left;
+    padding-right: 0;
   }
 
   .coffee-menu h3 {
@@ -2331,6 +2364,10 @@ footer {
 
   .box-button button {
     width: 100%;
+  }
+
+  .food-box .drinks-name {
+    margin-right: 0;
   }
 }
 
