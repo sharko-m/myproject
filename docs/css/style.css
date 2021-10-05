@@ -562,6 +562,7 @@ nav a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
+  margin-right: 35px;
 }
 
 .kafenaite-about h2 {
@@ -571,9 +572,7 @@ nav a {
   font-size: 70px;
   color: #eec947;
   word-spacing: 7px;
-  padding-bottom: 6px;
-  margin-top: 33px;
-  height: 8px;
+  margin-bottom: 0;
 }
 
 .kafenaite-about h2 span {
@@ -1384,7 +1383,6 @@ aside img {
   font-family: "Economica", sans-serif;
   font-size: 50px;
   text-align: center;
-  margin-top: 91px;
   margin-bottom: 10px;
   letter-spacing: 1.2px;
 }
@@ -1804,6 +1802,11 @@ footer {
     width: 100%;
   }
 
+  .coffee-menu h3 {
+    height: 0;
+    margin: 25px 0 70px 0;
+  }
+
   .services .services-item {
     margin-bottom: 97px;
   }
@@ -1967,7 +1970,7 @@ footer {
   .burger-wrapper .main-menu a {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 6px;
     color: #fff;
     text-decoration: none;
     border-top: 1px solid #3f3f3f;
@@ -2039,30 +2042,38 @@ footer {
     display: none;
   }
 
+  .kafeinate {
+    height: auto;
+    margin-top: 115px;
+  }
+
   .kafenaite-about {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .kafeinate .kafenaite-about {
     width: 100%;
-    padding-right: 130px;
+    padding-right: 30px;
+    margin: 0;
   }
 
   .kafenaite-about h2 {
     font-size: 30px;
+    max-width: 195px;
+    margin-top: 0;
   }
 
   .kafenaite-about p {
-    display: none;
+    max-width: 207px;
+  }
+
+  .button-order {
+    width: 195px;
   }
 
   .kafenaite-about button {
-    width: 152px;
-    height: 37px;
-  }
-
-  .kafeinate {
-    height: 70vh;
+    width: 143px;
+    height: 33px;
   }
 
   .button-order button {
@@ -2085,6 +2096,20 @@ footer {
     grid-template-rows: repeat(6, 1fr);
   }
 
+  .arabica p {
+    width: 97%;
+    color: #cbbfac;
+    margin: 8px 0 0 0;
+    text-align: justify;
+    line-height: 1.4;
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .arabica h3 {
+    font-size: 46px;
+  }
+
   .wrapper .wrapper-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2098,6 +2123,8 @@ footer {
 
   .wrapper-special h3 {
     font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 0;
   }
 
   .wrapper-special p {
@@ -2232,15 +2259,19 @@ footer {
 
   .history-about .arabica {
     padding-top: 32px;
-    padding-bottom: 58px;
+    padding-bottom: 25px;
+  }
+
+  .arabica button {
+    margin-left: 100px;
   }
 
   .about .contacts {
-    margin-bottom: 47px;
+    margin-bottom: 25px;
   }
 
   .btns-container {
-    margin-top: 45px;
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2248,6 +2279,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 25px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -2260,13 +2292,17 @@ footer {
 
   .btns-container button {
     font-size: 12px;
-    width: 85%;
+    width: 93%;
     margin-left: 15px;
     margin-bottom: 8px;
   }
 
   .breakfast-menu .view {
     display: none;
+  }
+
+  .breakfast-menu {
+    margin-bottom: 25px;
   }
 
   .contacts .adress {
@@ -2303,10 +2339,10 @@ footer {
 
   .teamwork select {
     width: 100%;
+    margin-top: 0;
   }
 
   .anketa {
-    margin-top: 30px;
     margin-left: 0;
   }
 
@@ -2317,6 +2353,7 @@ footer {
 
   .send input {
     width: 100%;
+    margin-top: 15px;
   }
 
   .about h3 {
@@ -2384,9 +2421,17 @@ footer {
     left: 54%;
   }
 
+  .burger-wrapper .main-menu a {
+    padding: 4px;
+  }
+
   .menu__box {
     padding: 40px 0;
     height: 24%;
+  }
+
+  .services {
+    padding-top: 0;
   }
 
   .services .services-item {
@@ -2406,21 +2451,29 @@ footer {
   }
 
   .button-order {
-    width: 18%;
-    margin-top: 35px;
+    width: 75%;
+    margin-top: 14px;
   }
 
   .kafeinate .kafenaite-about {
-    margin-bottom: 124px;
+    margin-bottom: 0;
+    margin-top: 28px;
   }
 
   .kafenaite-about h2 {
-    width: 20%;
+    width: 75%;
+  }
+
+  .kafenaite-about p {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
   }
 
   .kafeinate {
     height: auto;
-    padding-top: 117px;
+    margin-top: 65px;
   }
 
   .intro p {
@@ -2439,6 +2492,13 @@ footer {
     margin-top: 27px;
     margin-left: 0;
     margin-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .btns-container button {
+    margin-left: 10px;
   }
 
   .image-slider .swiper-pagination {
@@ -2493,20 +2553,28 @@ footer {
 
   .coffee-beans p {
     padding-right: 0;
-    width: 90%;
+    width: 96%;
+    margin: 5px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-align: center;
   }
 
   .coffee-beans h4 {
     width: 100%;
     padding: 0;
+    text-align: center;
   }
 
   .arabica h3 {
     font-size: 34px;
+    text-align: center;
   }
 
   .arabica button {
-    margin-left: 42px;
+    margin-left: 62px;
   }
 
   .arabica p {
@@ -2521,6 +2589,10 @@ footer {
   .breakfast-menu {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .breakfast-menu h3 {
+    font-size: 28px;
   }
 
   .box-cards img {
@@ -2582,10 +2654,20 @@ footer {
 
   .teamwork select {
     margin-top: 0;
+    width: 101%;
+  }
+
+  .send input {
+    margin-bottom: 10px;
+    width: 102%;
   }
 
   .anketa {
-    margin-top: 30px;
+    margin-top: 0;
     margin-left: 0;
+  }
+
+  .contacts .adress {
+    padding-top: 0;
   }
 }
