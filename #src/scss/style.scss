@@ -99,7 +99,7 @@ nav a {
     display: flex;
     align-items: flex-end;
     // padding-top: 127px;   
-    height: 81vh;
+    height: 550px;
 }
 
 .kafeinate .kafenaite-about {
@@ -1178,6 +1178,9 @@ textarea {
     .services .services-item {
         margin-bottom: 97px;
     }
+    .intro h3 {
+        margin: 0;
+    }
     .wrapper .wrapper-menu {
         background-color: transparent;
         padding-left: 10px;
@@ -1185,6 +1188,9 @@ textarea {
     .breakfast-menu .view {
         display: none;
     }   
+    .breakfast-menu h3 {
+        padding-top: 32px;
+    }
     .wrapper-menu .view {
         right: 10%;
     }
@@ -1206,6 +1212,10 @@ textarea {
     .about .contacts {
         display: flex;   
         flex-direction: column; 
+        margin-bottom: 30px;
+    }
+    .breakfast-menu {
+        margin-bottom: 20px;
     }
     
     .about {
@@ -1770,9 +1780,8 @@ textarea {
             display: -webkit-box;
             overflow: hidden;
         }
-        .kafeinate {
-            height: auto;
-            margin-top: 65px;
+        .kafeinate {            
+            margin-top: 80px;
         }
         .intro p {
             padding-left: 21px;

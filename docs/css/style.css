@@ -543,7 +543,7 @@ nav a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 81vh;
+  height: 550px;
 }
 
 .kafeinate .kafenaite-about {
@@ -1811,6 +1811,10 @@ footer {
     margin-bottom: 97px;
   }
 
+  .intro h3 {
+    margin: 0;
+  }
+
   .wrapper .wrapper-menu {
     background-color: transparent;
     padding-left: 10px;
@@ -1818,6 +1822,10 @@ footer {
 
   .breakfast-menu .view {
     display: none;
+  }
+
+  .breakfast-menu h3 {
+    padding-top: 32px;
   }
 
   .wrapper-menu .view {
@@ -1852,6 +1860,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .breakfast-menu {
+    margin-bottom: 20px;
   }
 
   .about {
@@ -2472,8 +2485,7 @@ footer {
   }
 
   .kafeinate {
-    height: auto;
-    margin-top: 65px;
+    margin-top: 80px;
   }
 
   .intro p {
