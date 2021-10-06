@@ -1217,7 +1217,16 @@ textarea {
     .breakfast-menu {
         margin-bottom: 20px;
     }
-    
+    .variations-coffee {
+        margin-bottom: 27px;
+    }
+    .history-about .arabica {
+        padding-top: 22px;
+        padding-bottom: 34px;
+    }
+    .wrapper-special h3 {
+        margin-top: 30px;
+    }
     .about {
         display: flex;
         flex-direction: column;
@@ -1785,7 +1794,10 @@ textarea {
         }
         .intro p {
             padding-left: 21px;
-            font-size: 18px;
+            font-size: 18px;            
+        }
+        .items h4 {
+            margin: 0;
         }
         .btns-container {
             display: flex;
@@ -1796,7 +1808,7 @@ textarea {
             align-items: center;         
         }
         .btns-container button {
-            margin-left: 10px;
+            margin-left: 0;
         }
         
         .image-slider .swiper-pagination {
@@ -1817,6 +1829,8 @@ textarea {
         
         .items p {
             font-size: 16px;
+            height: auto;
+            margin-bottom: 9px;
         }
         
         .wrapper-menu .menu {
