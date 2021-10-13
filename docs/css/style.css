@@ -2108,6 +2108,7 @@ footer {
 
   .kafenaite-about p {
     max-width: 207px;
+    line-height: 1.3;
   }
 
   .button-order {
