@@ -1685,6 +1685,7 @@ textarea {
         .visitors .review-card p {
             font-size: 16px;
             padding: 0;
+            line-height: 1.4;
         }
         .adress-line p {
             margin: 24px 0 0 16px;
@@ -1728,6 +1729,7 @@ textarea {
         }
         .booking p {
             font-size: 16px;
+            line-height: 1.3;
         }
                 
         .booking input {
@@ -1938,7 +1940,17 @@ textarea {
             // height: 423vh;
         }
         .swiper-cont .swiper-pagination {
-            bottom: 2%;
+            bottom: 5%;
+        }
+        .about h3 {
+            font-size: 28px;
+        }
+        .visitors h5 {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .visitors .visitor-name {
+            width: 25%;
         }
         
         .social img {
