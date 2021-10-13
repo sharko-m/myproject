@@ -194,12 +194,10 @@ nav a {
     // height: 763px;
     // height: 103vh;
     max-width: 1120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 28px 15px 0 15px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
-    padding-top: 28px;         
+    box-sizing: border-box;        
 }
 .intro {       
     display: flex;
@@ -256,7 +254,7 @@ nav a {
 }
 .items p {    
     // margin-bottom: 8px;
-    height: 80px;
+    
     width: 353px;
     text-align: center;
     // margin-top: 3px;
@@ -381,8 +379,8 @@ aside img {
 }
 .menu-drinks {
         position: relative;
-        height: 63vh;
-        margin-bottom: 73px;
+        height: 430px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -648,13 +646,11 @@ aside img {
     margin-bottom: 73px;    
 }
 .breakfast-menu h3 { 
-    padding-bottom: 18px;  
+    margin: 92px 0 18px 0;     
     text-transform: uppercase;
     font-family: Economica,sans-serif;
     font-size: 50px;
-    text-align: center;
-    margin: 0;    
-    padding-top: 92px;
+    text-align: center;    
     letter-spacing: 1.3px;
 }
 
@@ -676,7 +672,7 @@ aside img {
     justify-content: space-around;
     margin-left: 87px;
     margin-right: 81px;
-    padding-bottom: 49px;
+    margin-bottom: 49px;
 }
 .btns-container .active {
     background-color: #edc947;
@@ -978,7 +974,7 @@ aside img {
     flex-direction: column;
 }
 .anketa {
-    padding-top: 40px;
+    margin-top: 40px;
     margin-left: 11px;
 }
 .name-mail {
@@ -1176,7 +1172,7 @@ textarea {
     margin: 25px 0 70px 0;
 }
     .services .services-item {
-        margin-bottom: 97px;
+        margin-bottom: 20px;
     }
     .intro h3 {
         margin: 0;
@@ -1189,7 +1185,7 @@ textarea {
         display: none;
     }   
     .breakfast-menu h3 {
-        padding-top: 32px;
+        margin-top: 32px;
     }
     .wrapper-menu .view {
         right: 10%;
@@ -1203,9 +1199,20 @@ textarea {
     aside {
         display: none;
     }
+    .coffee-beans h4 {
+        margin: 35px 16px 0 0;
+    }
+    .btns-container {
+        margin: 0 0 45px 0;
+    }
     .btns-container button {
-        margin-left: 15px;
+        width: 173px;
+        height: 50px;
+        margin: 5px;
     }    
+    .coffee-beans p {
+        margin: 20px;
+    }
     .review-card img {
         display: none;
     }
@@ -1232,7 +1239,9 @@ textarea {
         flex-direction: column;
         margin-top: 0px;
     }   
-        
+    .little-logo {
+        margin-top: 35px;
+    }
     .swiper-cont .swiper-pagination {
         position: absolute;
         bottom: 8%;        
@@ -1244,6 +1253,9 @@ textarea {
 
     
     @media all and (max-width: 431px) {
+        p {
+            font-size: 16px;
+        }
         
         .header .wrapper {
             position: relative;
@@ -1477,6 +1489,9 @@ textarea {
         .button-order button {
             font-size: 16px;            
         }
+        .services {
+            padding: 15px;
+        }
         
         .services .services-item {
             display: flex;
@@ -1499,7 +1514,8 @@ textarea {
             letter-spacing: 0;
         }
         .arabica h3 {
-            font-size: 46px;
+            font-size: 34px;
+            text-align: center;
         }
         
         .wrapper .wrapper-menu {
@@ -1509,14 +1525,13 @@ textarea {
         }
         
         .wrapper-special h3 {
-            font-size: 36px;
+            font-size: 34px;
             margin-top: 25px;
             margin-bottom: 0;
         }
         .wrapper-special p {
             font-size: 17px;
-            text-align: left;
-            padding-left: 32px;
+            text-align: center;
         }
         .wrapper-menu .menu {
             display: flex;
@@ -1540,10 +1555,15 @@ textarea {
         }
         
         .intro p {
-            text-align: center;       
+            text-align: center;                 
         }
         .intro h3 {
             margin: 20px 0 0 0;
+            font-size: 34px;
+        }
+        .items h4 {
+            font-size: 24px;
+            margin: 10px 0 0 0;
         }
         .menu-drinks .structure-drinks {            
             width: 100%;            
@@ -1569,6 +1589,7 @@ textarea {
         }
         .items p {
             width: 100%;
+            margin: 34px 0 0 0;  
         }
         .variations-coffee .coffee-beans {
             display: grid;             
@@ -1588,7 +1609,8 @@ textarea {
             display: none;
         }
         .coffee-beans h4 {
-            margin-top: 23px;
+            margin-top: 5px;
+            font-size: 24px;
         }
         .coffee-beans div {
             width: 100%;
@@ -1608,6 +1630,7 @@ textarea {
         .coffee-menu h3 {
             margin-right: 0;
             margin-top: 10px;
+            font-size: 44px;
         }
         .variations-coffee {
             margin-bottom: 40px;
@@ -1623,21 +1646,18 @@ textarea {
             margin-bottom: 25px;
         }
         .btns-container {
-            margin-top: 30px;
+            margin: 0 0 25px 0;
             display: flex;
-            flex-direction: column;
-            padding-bottom: 25px;
-            margin-left: 0;
-            margin-right: 0;  
+            flex-direction: column;            
         }
         
         .breakfast-menu h3 {
             font-size: 33px;
-            padding-top: 45px;
-            height: 15px;
+            margin-top: 40px;
+            // height: 15px;
         }
         .btns-container button {
-            font-size: 12px;
+            font-size: 16px;
             width: 93%;
             margin-left: 15px;
             margin-bottom: 8px;
@@ -1651,6 +1671,7 @@ textarea {
         }
         .contacts .adress {
             width: 100%;
+            padding-top: 0;
         }
         .about .public {
             width: 100%;
@@ -1659,12 +1680,13 @@ textarea {
             margin-top: 0px;
             font-size: 34px;
         }
-        .visitors p {
-            // margin-bottom: 70px;
-        }
+        
         .visitors .review-card p {
             font-size: 16px;
             padding: 0;
+        }
+        .adress-line p {
+            margin: 24px 0 0 16px;
         }
         .name-mail {
             flex-direction: column;
@@ -1674,21 +1696,27 @@ textarea {
             width: 100%;
             margin-bottom: 18px;
             margin-right: 0;
+            padding: 0 0 0 10px;
+            font-size: 18px;
         }
         .teamwork select {
             width: 100%;
             margin-top: 0;
+            font-size: 18px;
         }
         .anketa {
-            // margin-top: 30px;
+            margin-top: 20px;
             margin-left: 0;
         }
         .message-area, textarea {
             width: 99%;
+            height: 100px;
+            margin-bottom: 18px;
+            font-size: 18px;
         }
         .send input {
             width: 100%;
-            margin-top: 15px;
+            margin-top: 7px;
         }
         
         .about h3 {
@@ -1703,6 +1731,7 @@ textarea {
                 
         .booking input {
             width: 275px;
+            font-size: 18px;
         }
         .design p {
             padding-left: 0; 
@@ -1730,6 +1759,9 @@ textarea {
         }
         .food-box .drinks-name {
             margin-right: 0;
+        }
+        .subscription .arrow-up {
+            border: solid 6px #303030;
         }
     }
 
@@ -1793,8 +1825,8 @@ textarea {
             margin-top: 80px;
         }
         .intro p {
-            padding-left: 21px;
-            font-size: 18px;            
+            // padding-left: 21px;
+            font-size: 17px;            
         }
         .items h4 {
             margin: 0;
@@ -1802,7 +1834,7 @@ textarea {
         .btns-container {
             display: flex;
             flex-direction: column;
-            margin-top: 27px;   
+            margin-top: 15px;   
             margin-left: 0;
             margin-right: 0; 
             align-items: center;         
@@ -1828,8 +1860,7 @@ textarea {
         }
         
         .items p {
-            font-size: 16px;
-            height: auto;
+            font-size: 16px;           
             margin-bottom: 9px;
         }
         
@@ -1848,9 +1879,9 @@ textarea {
             height: 43px;
             margin-left: 8px;
         }
-        .wrapper-special p {
-            padding-left: 15px;
-        }
+        // .wrapper-special p {
+        //     padding-left: 15px;
+        // }
         
         .coffee-beans div {
             align-items: flex-start;
@@ -1871,10 +1902,10 @@ textarea {
             text-align: center;
         }
         
-        .arabica h3 {
-            font-size: 34px;
-            text-align: center;
-        }
+        // .arabica h3 {
+        //     font-size: 34px;
+        //     text-align: center;
+        // }
         .arabica button {
             margin-left: 62px;
         }
@@ -1892,6 +1923,7 @@ textarea {
         }
         .breakfast-menu h3 {
             font-size: 28px;
+            margin-top: 30px;
         }
         .box-cards img {
             width: 320px;
@@ -1913,6 +1945,9 @@ textarea {
         }
         .social {
             width: 40%;
+        }
+        .name-mail {
+            margin-top: 15px;
         }
         .booking input[type="email"]::placeholder { 
             font-size: 16px;    
