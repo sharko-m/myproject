@@ -722,7 +722,6 @@ nav a {
 }
 
 .items h4 {
-  height: 5px;
   font-family: "Economica", sans-serif;
   font-size: 34px;
   text-transform: uppercase;
@@ -736,7 +735,7 @@ nav a {
   line-height: 1.4;
   letter-spacing: 1.5px;
   word-spacing: 0.2px;
-  margin: 48px 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 .wrapper {
@@ -832,9 +831,8 @@ aside img {
   font-weight: 400;
   font-size: 50px;
   text-align: center;
-  height: 29px;
-  margin-top: 88px;
-  margin-right: 59px;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .wrapper-menu .food__menu {
@@ -924,9 +922,8 @@ aside img {
   font-family: "Economica", sans-serif;
   font-weight: 400;
   font-size: 34px;
-  height: 6px;
   margin-top: 19px;
-  margin-bottom: 32px;
+  margin-bottom: 2px;
   letter-spacing: 1.3px;
 }
 
@@ -986,8 +983,8 @@ aside img {
 }
 
 .special {
-  padding-top: 40px;
-  padding-bottom: 28px;
+  margin-top: 40px;
+  margin-bottom: 28px;
 }
 
 .wrapper-special {
@@ -1225,7 +1222,6 @@ aside img {
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
   margin: 0;
-  padding-bottom: 18px;
 }
 
 .hide {
@@ -1328,7 +1324,7 @@ aside img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 48px;
+  margin-top: 48px;
 }
 
 .breakfast-menu .view button {
@@ -1412,8 +1408,7 @@ aside img {
   line-height: 1.9;
   word-spacing: 0.3px;
   letter-spacing: 1.0px;
-  padding-top: 15px;
-  padding-bottom: 23px;
+  margin-top: 0;
 }
 
 .quotes-left {
@@ -1798,8 +1793,7 @@ footer {
   }
 
   .coffee-menu h3 {
-    height: 0;
-    margin: 25px 0 70px 0;
+    margin: 25px 0 25px 0;
   }
 
   .services .services-item {
@@ -2255,7 +2249,7 @@ footer {
 
   .items p {
     width: 100%;
-    margin: 34px 0 0 0;
+    margin: 15px 0 0 0;
   }
 
   .variations-coffee .coffee-beans {
@@ -2310,8 +2304,17 @@ footer {
     font-size: 44px;
   }
 
+  .price .doll {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .variations-coffee {
     margin-bottom: 40px;
+  }
+
+  .special {
+    margin-top: 0;
   }
 
   .history-about .arabica {

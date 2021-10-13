@@ -242,26 +242,22 @@ nav a {
     border-radius: 50%;
     background-color: #e5e5e5;
 }
-.items h4 {
-    height: 5px;
-    font-family: "Economica", sans-serif;
-    // margin-top: 14px;
+.items h4 {    
+    font-family: "Economica", sans-serif;    
     font-size: 34px;
     text-transform: uppercase;
     text-align: center;
     margin: 14px 0 0 0;
     // padding-top: 14px;    
 }
-.items p {    
-    // margin-bottom: 8px;
-    
+.items p {      
     width: 353px;
     text-align: center;
     // margin-top: 3px;
     line-height: 1.4;
     letter-spacing: 1.5px;
     word-spacing: 0.2px;
-    margin: 48px 0 0 0;
+    margin: 15px 0 0 0;
     // padding-top: 48px;
 }
 
@@ -363,10 +359,10 @@ aside img {
     font-family: "Economica", sans-serif;
     font-weight: 400;
     font-size: 50px;
-    text-align: center;
-    height: 29px;
-    margin-top: 88px;
-    margin-right: 59px;
+    text-align: center;    
+    margin-top: 40px;
+    // margin-right: 59px;
+    margin-bottom: 35px;
 }
 .wrapper-menu .food__menu {
     width: auto;
@@ -425,9 +421,9 @@ aside img {
     font-family: "Economica", sans-serif;
     font-weight: 400;
     font-size: 34px;    
-    height: 6px;
+    
     margin-top: 19px;
-    margin-bottom: 32px;
+    margin-bottom: 2px;
     // margin-left: 28px;
     letter-spacing: 1.3px;
 }
@@ -480,8 +476,8 @@ aside img {
 // section4
 
 .special {
-    padding-top: 40px; 
-    padding-bottom: 28px;      
+    margin-top: 40px; 
+    margin-bottom: 28px;      
 }
 .wrapper-special {
        
@@ -692,8 +688,7 @@ aside img {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 25px;    
-    margin: 0;
-    padding-bottom: 18px;
+    margin: 0;    
 }
 
 .hide {
@@ -778,7 +773,7 @@ aside img {
 .breakfast-menu .view {
     display: flex;
     justify-content: flex-end;
-    padding-top: 48px;     
+    margin-top: 48px;     
 }
 .breakfast-menu .view button {
     font-size: 18px;
@@ -864,8 +859,7 @@ aside img {
     line-height: 1.9;
     word-spacing: 0.3px;
     letter-spacing: 1.0px;
-    padding-top: 15px;
-    padding-bottom: 23px;
+    margin-top: 0;
 }
 .quotes-left {
     width: 32px;
@@ -1167,9 +1161,8 @@ textarea {
         width: 100%;
     }
     
-.coffee-menu h3 {
-    height: 0;
-    margin: 25px 0 70px 0;
+.coffee-menu h3 {   
+    margin: 25px 0 25px 0;
 }
     .services .services-item {
         margin-bottom: 20px;
@@ -1590,7 +1583,7 @@ textarea {
         }
         .items p {
             width: 100%;
-            margin: 34px 0 0 0;  
+            margin: 15px 0 0 0;  
         }
         .variations-coffee .coffee-beans {
             display: grid;             
@@ -1633,8 +1626,15 @@ textarea {
             margin-top: 10px;
             font-size: 44px;
         }
+        .price .doll {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         .variations-coffee {
             margin-bottom: 40px;
+        }
+        .special {
+            margin-top: 0;
         }
         .history-about .arabica {
             padding-top: 32px;
