@@ -1715,6 +1715,7 @@ textarea {
             height: 100px;
             margin-bottom: 18px;
             font-size: 18px;
+            padding-right: 0;
         }
         .send input {
             width: 100%;
@@ -1885,7 +1886,12 @@ textarea {
         // .wrapper-special p {
         //     padding-left: 15px;
         // }
-        
+        .special {
+            margin-bottom: 0;
+        }
+        .wrapper-special p {
+            margin-bottom: 10px;
+        }
         .coffee-beans div {
             align-items: flex-start;
         }
@@ -1910,7 +1916,10 @@ textarea {
         //     text-align: center;
         // }
         .arabica button {
-            margin-left: 62px;
+            margin-left: 70px;
+            width: 175px;
+            height: 40px;
+            font-size: 16px;
         }
         .arabica p {
             padding-left: 14px;
@@ -1983,7 +1992,9 @@ textarea {
          }
          .send input {            
             margin-bottom: 10px;
-            width: 102%;
+            width: 101%;
+            font-size: 18px;
+            padding: 0;
         }
          .anketa {
             margin-top: 0;
